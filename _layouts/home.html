@@ -1,9 +1,136 @@
 <!doctype html>
-<html>
-  <head>
-    <link rel="stylesheet" href="{{ site.url }}/assets/styles/application.css">
-  </head>
-  <body>
-    hello12345
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport"/>
+        <title>{{ page.seo_title }} - Polymer Digital</title>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:600,700,700i|Muli:400,600i" rel="stylesheet">
+        <link href="{{ site.url }}/assets/styles/application.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="main-header" id="top">
+            <div class="container">
+                <a class="main-header__logo" href="{{ site.url }}">
+                    <img alt="Polymer Digital Logo" src="{{ site.url }}/assets/resources/polymer-logo.png">
+                </a>
+                <nav class="main-header__links">
+                    <ul>
+                        <li>
+                            <a href="{{ site.url }}/company">Company</a>
+                        </li>
+                        <li>
+                            <a class="with-dropdown" href="{{ site.url }}/what-we-do">What We Do</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="{{ site.url }}/what-we-do/discovery">
+                                        <img alt="Discovery" src="{{ site.url }}/assets/resources/service-icon.svg">
+                                        <span>Discovery</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.url }}/what-we-do/communication">
+                                        <img alt="Communication" src="{{ site.url }}/assets/resources/service-icon.svg">
+                                        <span>Communication</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.url }}/what-we-do/design">
+                                        <img alt="Design" src="{{ site.url }}/assets/resources/service-icon.svg">
+                                        <span>Design</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.url }}/what-we-do/development">
+                                        <img alt="Development" src="{{ site.url }}/assets/resources/service-icon.svg">
+                                        <span>Development</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.url }}/what-we-do/support">
+                                        <img alt="Support" src="{{ site.url }}/assets/resources/service-icon.svg">
+                                        <span>Support</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.url }}/what-we-do/partnerships">
+                                        <img alt="Partnerships" src="{{ site.url }}/assets/resources/service-icon.svg">
+                                        <span>Partnerships</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{{ site.url }}/articles">Articles</a>
+                        </li>
+
+                    </ul>
+                    <a class="btn" href="{{ site.url }}/contact">Get In Touch</a>
+                </nav>
+                <a class="main-header__menu" href="#">
+                    <span>Menu</span>
+                </a>
+                <!-- / __menu -->
+            </div>
+            <!-- / .container -->
+        </header>
+        <!-- / .main-header -->
+
+        <main id="main">
+  <div class="intro">
+    <div class="intro__banner">
+      <div class="container">
+        <section>
+          <h1>Your <em>partners</em> in web design</h1>
+        </section>
+        <a href="#" class="vertical">
+          View Projects
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.7 7"><polygon class="sa" points="24.3 7 0 7 0 5 24.3 5 20.8 1.4 22.2 0 29.7 7 24.3 7"/></svg>
+</span>
+        </a>
+      </div> <!-- / .container -->
+    </div> <!-- / __banner -->
+    <div class="row">
+      <div class="container">
+        <div class="row__side">
+          <section class="row__content">
+            <h2>About Us</h2>
+            <p>Here at Polymer Digital we love helping our customers market their services and products. With our creative designers, talented developers and unmatched customer service we can help you with all of your website needs.</p>
+            <a href="#" class="button button--line button--line--light">Learn More</a>
+          </section> <!-- / __content -->
+        </div> <!-- / __side -->
+        <div class="row__side">
+          <img src="assets/resources/phone.png" alt="phone">
+        </div> <!-- / __side -->
+      </div> <!-- / .container -->
+    </div> <!-- / .row -->
+    <div class="row">
+      <div class="container">
+        <div class="row__side">
+          <img class="small" src="assets/resources/illustration.png" alt="illustration">
+        </div> <!-- / __side -->
+        <div class="row__side">
+          <section class="row__content">
+            <h2>Types of companies we love to partner with</h2>
+            <p>Here at Polymer Digital we love helping our customers market their services and products. With our creative designers, talented developers and unmatched customer service we can help you with all of your website needs.</p>
+            <a href="#" class="button button--line button--line--light">Learn More</a>
+          </section> <!-- / __content -->
+        </div> <!-- / __side -->
+      </div> <!-- / .container -->
+    </div> <!-- / .row -->
+  </div> <!-- / .intro -->
+  </main>
+
+        <footer class="main-footer">
+  <div class="container">
+    <p>Polymer Digital LLC © Chicago Web Design</p>
+    <img src="{{ site.url }}/assets/resources/polymer.svg" alt="Polymer Digital">
+    <nav>
+      <a href="{{ site.url }}/contact">Contact Us</a>
+      <a href="#top" class="button anchor">Back to Top</a>
+    </nav>
+  </div> <!-- / .container -->
+</footer> <!-- / .main-footer -->
+
+    </body>
 </html>
