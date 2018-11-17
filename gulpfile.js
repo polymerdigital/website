@@ -13,7 +13,8 @@ let gulp = require('gulp'),
     gutil = require('gulp-util'),
     siteRoot = '_site',
     devTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-watch', 'serve'],
-    prodTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build'];
+    prodTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build'],
+    stageTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build-staging'];
 
 gulp.task('styles', function() {
     return gulp.src('_assets/styles/application.scss') // IMPORT ANY OTHER VENDOR LIBS FROM THAT SRC FILE
@@ -101,6 +102,21 @@ gulp.task('jekyll-build', () => {
 
 });
 
+gulp.task('jekyll-build-staging', () => {
+
+  const jekyll = child.exec('jekyll build --config _config.yml,_config.staging.yml');
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+
+});
+
 gulp.task('serve', function() {
 
     browserSync.init({
@@ -134,3 +150,4 @@ function handleError(err) {
 
 gulp.task('default', devTasks);
 gulp.task('build', prodTasks);
+gulp.task('build-staging', stageTasks);

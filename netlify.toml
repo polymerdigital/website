@@ -4,7 +4,7 @@
 
 
 [context.deploy-preview]
-  command = 'sed -i -e "s/https:\/\/polymerdigital.com/$DEPLOY_PRIME_URL/" _config.yml && gulp build'
+  command = 'cat > _config.staging.yml && printf "url: $DEPLOY_PRIME_URL" > _config.staging.yml && gulp build-staging
 
 
 [context.branch-deploy]
