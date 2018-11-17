@@ -1,0 +1,81 @@
+---
+title: Company
+seo_title: About Our Company
+---
+<div class="intro">
+  <div class="row first-m">
+    <div class="container">
+      <div class="row__side">
+        <section class="row__content">
+          <h1>Story</h1>
+          <p>Polymer Digital is a small and effective Chicago based web design studio that exists to help business owners market their companies. With a no bullshit approach to process and a tight knit team of creative craftsmen we are able to identify and solve issues that are preventing you from growing.</p>
+        </section> <!-- / __content -->
+      </div> <!-- / __side -->
+      <div class="row__side">
+        <img src="{{ site.url }}/assets/resources/phone.png" alt="phone">
+      </div> <!-- / __side -->
+    </div> <!-- / .container -->
+  </div> <!-- / .row -->
+  <div class="row">
+    <div class="container">
+      <div class="row__side">
+        <img class="small" src="{{ site.url }}/assets/resources/illustration.png" alt="illustration">
+      </div> <!-- / __side -->
+      <div class="row__side">
+        <section class="row__content">
+          <p>When we started out in late 2017 most of us were working together at a different web design agency. Collectively we shared a common goal: providing customers with the honest service they need to solve the problems they're having. The decision was made to be different than our agency peers; a thoughtful team of professionals that delivers high quality web design while prioritizing customer happiness over buzzwords, deadlines and budget.</p>
+          <a href="#" class="button button--line button--line--light">Let's Chat</a>
+        </section> <!-- / __content -->
+      </div> <!-- / __side -->
+    </div> <!-- / .container -->
+  </div> <!-- / .row -->
+</div> <!-- / .intro -->
+
+<div class="section">
+  <div class="container">
+    <div class="heading">
+      <h2>Our Team</h2>
+    </div> <!-- / .heading -->
+  </div> <!-- / .container -->
+  <div class="team">
+    <div class="container">
+      {% for person in site.data.team %}
+        <div class="team__member">
+          <div class="team__image">
+            <img src="{{ site.url }}/assets/resources/{{ person.image }}" alt="{{ person.name }}">
+          </div> <!-- / __image -->
+          <div class="team__info">
+            <h3>{{ person.name }}</h3>
+            <p>{{ person.title }}</p>
+          </div> <!-- / __info -->
+        </div> <!-- / __member -->
+      {% endfor %}
+    </div> <!-- / .container -->
+  </div> <!-- / .team -->
+</div> <!-- / .section -->
+
+<div class="testimonials">
+  <div class="container">
+    <div class="testimonials__heading">
+      <h2>Their words...</h2>
+    </div> <!-- / __heading -->
+    <div class="testimonials__slider">
+      <div class="testimonials__slide">
+        <blockquote>
+          <cite class="name"><strong>Kim Holland</strong> Securesheet</cite>
+          <p>“The Polymer Digital team is very professional, incredibly responsive, and easy to work with. They understood quickly what our goals were and translated them into a great new website for us. One of our objectives was for people to come to the site and request a demo - and we had 3 new requests within our first week of going live!”</p>
+        </blockquote>
+      </div> <!-- / __slide -->
+    </div> <!-- / __slider -->
+  </div> <!-- / .container -->
+</div> <!-- / .testimonials -->
+
+<div class="banner banner--light" style="background-image:url({{ site.url }}/assets/resources/banner.svg);">
+  <div class="container">
+    <section class="banner__content">
+      <h2>Let's Talk</h2>
+      <p>We love meeting new people — drop us a line!</p>
+      <a href="#" class="button button--white">Contact Us</a>
+    </section> <!-- / __content -->
+  </div> <!-- / .container -->
+</div> <!-- / .banner -->
