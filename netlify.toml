@@ -4,8 +4,8 @@
 
 
 [context.deploy-preview]
-  command = 'sed -i -e "s%url: \"http://localhost:4000\"%url: \""$DEPLOY_PRIME_URL"\"%" _config.yml && gulp build'
+  command = 'sed -i -e "s%url: \"https://polymerdigital.com\"%url: \""$DEPLOY_PRIME_URL"\"%" _config.yml && gulp build'
 
 
 [context.branch-deploy]
-  command = 'sed -i -e "s%url: \"http://localhost:4000\"%url: \""$DEPLOY_PRIME_URL"\"%" _config.yml && gulp build'
+  command = 'sed -i -e "s%url: \"https://polymerdigital.com\"%url: \""$DEPLOY_PRIME_URL"\"%" _config.yml && gulp build'
