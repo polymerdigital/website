@@ -101,6 +101,7 @@
     }
     h3 {
       @include h3(10px);
+      color: #fff;
       transition: $dt;
     }
     p {

@@ -72,13 +72,8 @@ gulp.task('resources-files', function() {
 });
 
 gulp.task('jekyll-watch', () => {
-//   const jekyll = child.spawn('jekyll', ['build',
-//     '--watch',
-//     '--incremental',
-//     '--drafts'
-//   ]);
 
-  const jekyll = child.exec('jekyll build --watch --incremental');
+  const jekyll = child.exec('jekyll build --watch --config _config.yml,_config.dev.yml');
 
   const jekyllLogger = (buffer) => {
     buffer.toString()
@@ -93,7 +88,7 @@ gulp.task('jekyll-watch', () => {
 
 gulp.task('jekyll-build', () => {
 
-  const jekyll = child.exec('jekyll build');
+  const jekyll = child.exec('jekyll build --config _config.yml');
 
   const jekyllLogger = (buffer) => {
     buffer.toString()

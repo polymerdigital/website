@@ -1,0 +1,23 @@
+</main>
+
+<footer class="main-footer">
+<div class="container">
+    <p>Polymer Digital LLC © Chicago Web Design</p>
+    <img alt="Polymer Digital" src="{{ site.url }}/assets/resources/polymer.svg">
+        <nav>
+            <a href="{{ site.url }}/contact">Contact Us</a>
+            <a class="button anchor" href="#top">Back to Top</a>
+        </nav>
+    </div>
+    <!-- / .container -->
+</footer>
+<!-- / .main-footer -->
+
+{% unless page.no_js %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ site.url }}/assets/js/application-vendor.js"></script>
+    <script src="{{ site.url }}/assets/js/application.js"></script>
+{% endunless %}
+
+</body>
+</html>
