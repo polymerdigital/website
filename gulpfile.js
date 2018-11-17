@@ -9,20 +9,11 @@ let gulp = require('gulp'),
     newer = require('gulp-newer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    connect = require('gulp-connect'),
-    open = require('gulp-open'),
-    twig = require('gulp-twig'),
-    data = require('gulp-data'),
-    fileinclude = require('gulp-file-include'),
-    _ = require('lodash'),
-    nunjucksRender = require('gulp-nunjucks-render'),
-    filter    = require('gulp-filter'),
-    path = require('path'),
-    fs = require('fs'),
     child = require('child_process'),
     gutil = require('gulp-util'),
     siteRoot = '_site',
-    baseTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll'];
+    devTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-watch', 'serve'],
+    prodTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build'];
 
 gulp.task('styles', function() {
     return gulp.src('_assets/styles/application.scss') // IMPORT ANY OTHER VENDOR LIBS FROM THAT SRC FILE
@@ -80,12 +71,14 @@ gulp.task('resources-files', function() {
         .pipe(gulp.dest('assets/resources'));
 });
 
-gulp.task('jekyll', () => {
-  const jekyll = child.spawn('jekyll', ['build',
-    '--watch',
-    '--incremental',
-    '--drafts'
-  ]);
+gulp.task('jekyll-watch', () => {
+//   const jekyll = child.spawn('jekyll', ['build',
+//     '--watch',
+//     '--incremental',
+//     '--drafts'
+//   ]);
+
+  const jekyll = child.exec('jekyll build --watch --incremental');
 
   const jekyllLogger = (buffer) => {
     buffer.toString()
@@ -95,6 +88,22 @@ gulp.task('jekyll', () => {
 
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
+
+});
+
+gulp.task('jekyll-build', () => {
+
+  const jekyll = child.exec('jekyll build');
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+
 });
 
 gulp.task('serve', function() {
@@ -102,7 +111,7 @@ gulp.task('serve', function() {
     browserSync.init({
      injectChanges: true,
      watch: true,
-     ignore: ['_site'],
+     ignore: ['_site', 'gulpfile.js'],
      port: 4000,
      server: {
        baseDir: siteRoot
@@ -128,5 +137,5 @@ function handleError(err) {
     this.emit('end');
 }
 
-gulp.task('default', [...baseTasks, 'serve']);
-gulp.task('build', baseTasks);
+gulp.task('default', devTasks);
+gulp.task('build', prodTasks);
