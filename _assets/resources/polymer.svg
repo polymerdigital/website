@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="24px" viewBox="0 0 15 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="17.6236791%" y1="67.8816118%" x2="119.244237%" y2="33.2530881%" id="linearGradient-1">
+            <stop stop-color="#FF542E" offset="0%"></stop>
+            <stop stop-color="#FF6C5F" offset="58%"></stop>
+            <stop stop-color="#F7A91E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-713.000000, -38.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Shape">
+                <path d="M719.321698,56.1883405 C718.503301,58.0262366 719.139735,60.1768707 720.833058,61.2955227 C722.526381,62.4141747 724.790942,62.1800111 726.210786,60.7394465 C727.63063,59.298882 727.79854,57.0650759 726.609529,55.4347529 C725.420517,53.8044299 723.215596,53.2451729 721.37343,54.1066665 L717.178658,49.9697357 L721.306292,45.9173399 C723.160739,46.7476983 725.353514,46.1537954 726.514526,44.5067142 C727.675538,42.8596331 727.472118,40.6313158 726.031369,39.2140615 C724.590619,37.7968073 722.32536,37.5967054 720.650974,38.7387837 C718.976587,39.880862 718.372838,42.037878 719.216963,43.8620831 L713,49.9697357 L719.321698,56.1883405 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

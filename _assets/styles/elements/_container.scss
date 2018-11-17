@@ -1,0 +1,23 @@
+.container{
+  max-width: 1280px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  &.sz-700 {
+    max-width: 780px;
+  }
+  @include breakpoint(600px) {
+    padding: 0 30px;
+  }
+}
+.pt {
+  padding-top: 120px;
+}
+.mt {
+  margin-top: 61px;  
+}
+#main {
+  width: 100%;
+  position: relative;
+  color: $primary;
+}

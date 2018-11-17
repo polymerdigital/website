@@ -1,0 +1,61 @@
+//Footer
+.main-footer {
+  width: 100%;
+  position: relative;
+  z-index: 4000;
+  padding: 25px 0;
+  background: $primary;
+  color: $white;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(720px) {
+      justify-content: center;
+    }
+  }
+  p {
+    @include h4(0);
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgba(255,255,255,.6);
+    @include breakpoint(720px) {
+      width: 100%;
+      text-align: center;
+      order: 3;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+  }
+  nav {
+    @include breakpoint(720px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0 0;
+      margin-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+    a {
+      color: $white;
+      @include h4;
+      transition: $dt;
+      &:hover {
+        color: $secondary;
+      }
+    }
+    .button {
+      border: 1px solid $white;
+      border-radius: 0;
+      padding: 15px 28px;
+      margin-left: 40px;
+      &:hover {
+        border-color: $secondary;
+      }
+    }
+  }
+}

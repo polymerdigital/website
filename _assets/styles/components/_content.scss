@@ -1,0 +1,45 @@
+.content {
+  h1 {
+    @include h2();
+    color: $primary;
+  }
+  h2 {
+    @include h3();
+    color: $primary;
+  }
+  h3 {
+    @include h3();
+    color: $primary;
+    font-size: 1.25em;
+  }
+  h4 {
+    @include h4(20px);
+    font-size: 1em;
+    color: $primary;
+  }
+  h5 {
+    @include h4(15px);
+    color: $primary;
+  }
+  h6 {
+    @include h4(15px);
+  }
+  p {
+    @include p-lrg();
+    a {
+      @include a-link;
+    }
+  }
+  ul {
+    @include ul;
+  }
+  ol {
+    @include ol();
+  }
+  blockquote {
+    @include blockquote;
+    padding: 40px 0;
+    color: $primary;
+    border-top: 1px solid $grey-light;
+  }
+}

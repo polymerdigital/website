@@ -1,0 +1,39 @@
+//Blog Intro
+.blog-intro {
+  width: 100%;
+  background: $primary no-repeat right center url(../resources/header.png);
+  background-size: 1450px;
+  padding: 170px 0 30px;
+  color: $white;
+  @include breakpoint(1170px) {
+    background-size: 1170px;
+  }
+  @include breakpoint(700px) {
+    background-position: center center;
+  }
+  &__details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+    .category {
+      width: calc(100% - 150px);
+      margin: 0;
+      @include breakpoint(660px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      ul {
+        margin-bottom: 10px;
+      }
+    }
+    .button {
+
+    }
+  }
+}

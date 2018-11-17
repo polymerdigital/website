@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>case-study/sm</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 59 500 59 500 559 0 559"></polygon>
+        <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <path d="M45,0 C70.2372041,273.376511 192.160615,439.306678 410.770232,497.7905 C738.684659,585.516233 1134.30262,-69.6329292 1308,418.506307 C1308,418.506307 1308,279.004205 1308,0 L45,0 Z" id="path-5"></path>
+        <filter x="-1.9%" y="-4.7%" width="103.8%" height="109.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="24" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="44.7910694%" y1="107.482462%" x2="100%" y2="102.767857%" id="linearGradient-7">
+            <stop stop-color="#36A7E5" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#36A7E5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M648.607857,0 C641.928268,233.029778 690.298922,370.582019 793.719819,412.656724 C948.851164,475.768781 1051.25705,42.1037819 1308,251.803264 C1308,251.803264 1308,167.868842 1308,0 L648.607857,0 Z" id="path-8"></path>
+        <filter x="-3.6%" y="-5.7%" width="107.3%" height="111.5%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="24" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-220.000000, -2928.000000)">
+            <g id="section/portfolio" transform="translate(0.000000, 2675.000000)">
+                <g id="content" transform="translate(220.000000, 98.000000)">
+                    <g id="portfolio" transform="translate(0.000000, 96.000000)">
+                        <g id="case-study/sm">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="Rectangle-4">
+                                <use fill="#1E2C39" xlink:href="#path-2"></use>
+                                <use fill-opacity="0.2" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                            </g>
+                            <g id="Group-20" mask="url(#mask-3)">
+                                <g transform="translate(-154.000000, 312.000000) scale(1, -1) translate(154.000000, -312.000000) translate(-808.000000, 59.000000)">
+                                    <g id="Path-2" stroke="none" opacity="0.200000003">
+                                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                        <use fill-opacity="0.2" fill="#000000" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                    </g>
+                                    <path d="M-1.35454358,-1 L1309,-1 L1309,3.65894643e-14 C1309,170.890069 1309,170.890069 1309,279.638294 C1309,322.360812 1309,322.360812 1309,349.547868 C1309,360.228497 1309,360.228497 1309,367.025261 C1309,371.880093 1309,371.880093 1309,372.851059 L1309,374.73809 L1307.43851,373.678543 C1270.92047,348.899261 1233.37462,330.534698 1194.64755,318.146235 C1117.08066,293.333242 1035.70832,292.510186 946.041705,311.939478 C907.915405,320.200826 868.472332,332.052204 825.539222,347.704439 C791.011839,360.292177 756.85078,374.248656 709.673153,394.605463 C699.108707,399.163946 663.738548,414.535399 659.721313,416.274926 C640.258541,424.702618 625.40296,431.039652 611.15484,436.953113 C575.273952,451.844921 545.920597,462.867703 518.729897,471.344515 C453.234682,491.762918 401.24576,496.738411 356.493934,484.200263 C204.428284,441.595932 85.3114831,280.251929 -0.95565766,0.294479944 L-1.35454358,-1 Z" id="Path-2-Copy" stroke="url(#linearGradient-7)" stroke-width="2"></path>
+                                    <g id="Path-2" stroke="none" opacity="0.200000003">
+                                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                        <use fill-opacity="0.2" fill="#000000" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

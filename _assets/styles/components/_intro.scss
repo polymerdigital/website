@@ -1,0 +1,139 @@
+//Intro
+.intro {
+  width: 100%;
+  overflow-x: hidden;
+  background: $primary;
+  color: $white;
+  position: relative;
+  &:before {
+    content: '';
+    width: 720px;
+    height: 325px;
+    background: url(../resources/intro-corner.svg) no-repeat center center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__banner {
+    width: 100%;
+    padding: 200px 0 300px;
+    background: url(../resources/intro-bg.png) no-repeat left bottom;
+    background-size: contain;
+    position: relative;
+    z-index: 10;
+    @include breakpoint(700px) {
+      padding: 150px 0 200px;
+      background-size: 1100px;
+      font-size: 80%;
+    }
+    .container {
+      position: relative;
+    }
+    .vertical {
+      color: $white;
+      @include h4(0);
+      display: block;
+      transform: rotate(90deg);
+      width: 160px;
+      padding: 20px 0px;
+      position: absolute;
+      left: -40px;
+      top: 40%;
+      transition: $dt;
+      @include breakpoint(700px) {
+        left: -60px;
+      }
+      &:hover {
+        color: $secondary;
+        .icon {
+          .sa {
+            fill: $secondary;
+          }
+        }
+      }
+      .icon {
+        display: inline-block;
+        width: 30px;
+        margin-left: 10px;
+      }
+    }
+    section {
+      margin: 0 auto;
+      max-width: 450px;
+      text-align: center;
+      @include breakpoint(700px) {
+        padding-left: 20px;
+      }
+    }
+    h1 {
+      @include h1;
+      @include breakpoint(400px) {
+        font-size: 3em;
+      }
+      em {
+        color: $secondary;
+      }
+    }
+  }
+}
+.intro__banner + .row {
+  margin-top: -60px;
+  padding-bottom: 0px;
+  @include breakpoint(560px) {
+    padding-bottom: 0;
+    .row__side {
+      margin-top: -40px;
+    }
+  }
+}
+.row {
+  width: 100%;
+  padding: 0 0 70px;
+  position: relative;
+  z-index: 100;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &:last-child {
+    .container {
+      @include breakpoint(560px) {
+        flex-flow: wrap-reverse;
+      }
+    }
+  }
+  img {
+    display: block;
+  }
+  img.small {
+    width: 420px;
+  }
+  &__side {
+    width: 46%;
+    @include breakpoint(780px) {
+      width: 47%;
+      font-size: 80%;
+    }
+    @include breakpoint(560px) {
+      width: 100%;
+    }
+  }
+  &__content {
+    max-width: 450px;
+    padding: 60px 0;
+    h1, h2 {
+      @include h2;
+    }
+    p {
+      @include p;
+    }
+  }
+}
+.first-m {
+  margin-top: 100px;
+}
+.first-p {
+  padding-top: 100px;
+}

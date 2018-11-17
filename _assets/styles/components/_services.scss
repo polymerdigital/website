@@ -1,0 +1,61 @@
+//Services Grid
+.services {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-right: 1px solid $grey-light;
+  &__item {
+    width: calc(100% / 3);
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -1px;
+    border: 1px solid $grey-light;
+    border-right: none;
+    @include breakpoint(560px) {
+      width: 50%;
+    }
+    &:before {
+      @include content100;
+      box-shadow: $shadow;
+      transition: $dt;
+      opacity: 0;
+    }
+    &__inner {
+      position: relative;
+      padding: 60px 10px;
+      width: 100%;
+      z-index: 10;
+      @include breakpoint(740px) {
+        padding: 40px 10px;
+        font-size: 80%;
+      }
+      img {
+        display: inline-block;
+        width: 60px;
+        margin-bottom: 20px;
+      }
+      a {
+        display: block;
+        color: $primary;
+        @include h3(0);
+        transition: $dt;
+        &:before {
+          @include content100;
+        }
+      }
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+      a {
+        color: $secondary;
+      }
+    }
+  }
+}

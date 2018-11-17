@@ -1,0 +1,14 @@
+/**
+ * Tab content
+ */
+.js-tabby .tabs-pane {
+	display: none;
+	&.active {
+    display: block;
+    @include animated(.5s);
+    @include fadeInDown();
+	}
+	&:focus {
+		outline: none;
+	}
+}

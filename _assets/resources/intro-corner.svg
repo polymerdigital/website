@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720px" height="326px" viewBox="0 0 720 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="29.5084635%" y1="83.5457343%" x2="69.124349%" y2="-16.2907569%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Desktop" transform="translate(0.000000, -1174.000000)" fill="url(#linearGradient-1)">
+            <g id="section/types" transform="translate(0.000000, 1000.000000)">
+                <g id="Group-22">
+                    <path d="M0,240.984375 C55.7916667,196.432292 120.0625,174.15625 192.8125,174.15625 C301.9375,174.15625 333.140625,384.234375 480.914062,384.234375 C579.429688,384.234375 659.125,422.510417 720,499.0625 L0,499.0625 L0,240.984375 Z" id="Path-4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

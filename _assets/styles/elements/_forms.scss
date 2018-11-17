@@ -1,0 +1,74 @@
+form{
+  margin: 0;
+}
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="textbox"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  font-family: $muli;
+  padding: 10px 20px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  font-size: 1em;
+  color: $white;
+  line-height: 1.6;
+  background-color: rgba(0,0,0,.2);
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="textbox"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+textarea {
+  height: 115px;
+  resize: none;
+
+}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: 0; }
+label,
+legend {
+  display: block;
+  font-weight: 400; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin: 1rem 1rem 1rem 0;
+}
+label.box-wrap {
+  font-size: 1.5rem;
+  margin-left: .5rem;
+  font-weight: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

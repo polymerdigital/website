@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="148px" viewBox="0 0 121 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>case-study/sm copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <path d="M49,0 C76.7948938,300.93027 211.074755,483.584624 451.839583,547.963061 C812.986825,644.530715 1248.69909,-76.6512679 1440,460.687773 C1440,460.687773 1440,307.125182 1440,0 L49,0 Z" id="path-2"></path>
+        <filter x="-1.7%" y="-4.3%" width="103.5%" height="108.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="24" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="-3.18745374%" y1="100%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FF5722" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FF5722" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-849.000000, -3280.000000)">
+            <g id="section/portfolio" transform="translate(0.000000, 2675.000000)">
+                <g id="content" transform="translate(220.000000, 98.000000)">
+                    <g id="portfolio" transform="translate(0.000000, 96.000000)">
+                        <g id="case-study/sm-copy-2" transform="translate(500.000000, 309.000000)">
+                            <g id="Group-20" transform="translate(720.000000, 278.500000) scale(1, -1) translate(-720.000000, -278.500000) ">
+                                <g id="Path-2" opacity="0.200000003">
+                                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    <use fill-opacity="0.2" fill="#000000" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                </g>
+                                <path d="M-1.35487629,-1 L1441,-1 L1441,3.65894643e-14 C1441,187.979076 1441,187.979076 1441,307.602124 C1441,354.596893 1441,354.596893 1441,384.502655 C1441,396.251347 1441,396.251347 1441,403.727787 C1441,409.068102 1441,409.068102 1441,410.136165 L1441,412.022313 L1439.43883,410.963867 C1399.22754,383.701266 1357.88391,363.495971 1315.23929,349.865687 C1229.82614,322.565513 1140.22414,321.659972 1041.49226,343.035731 C999.513455,352.124274 956.085571,365.162086 908.815702,382.381024 C870.801698,396.228339 833.191598,411.581117 781.251284,433.974313 C769.620554,438.988707 730.680846,455.897342 726.258313,457.810774 C704.83184,467.081047 688.477504,474.051601 672.79206,480.556177 C633.292775,496.936082 600.97985,509.060131 571.048524,518.383569 C498.960735,540.838506 441.743629,546.309788 392.497821,532.524056 C225.12659,485.670628 94.008417,308.218737 -0.95558852,0.294704226 L-1.35487629,-1 Z" id="Path-2-Copy" stroke="url(#linearGradient-4)" stroke-width="2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

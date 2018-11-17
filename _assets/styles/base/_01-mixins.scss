@@ -1,0 +1,16 @@
+// breakpoint mixin
+@mixin breakpoint($value, $width : max-width) {
+  @media only screen and ($width : $value) {
+    @content;
+  }
+}
+
+//PSUEDO 100% element
+@mixin content100 {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

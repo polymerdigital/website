@@ -1,0 +1,99 @@
+//Blog
+.blog-landing {
+  padding: 30px 0 100px;
+  .blog {
+    &__item {
+      @include breakpoint(900px) {
+        width: calc((100% / 2) - 24px);
+        margin: 0 12px 24px;
+      }
+      @include breakpoint(500px) {
+        width: 100%;
+        margin: 0 0 24px;
+      }
+    }
+  }
+}
+.blog {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  &__item {
+    width: calc((100% / 3) - 24px);
+    margin: 0 12px 24px;
+    position: relative;
+    background: $white;
+    border-radius: 6px;
+    transition: $dt;
+    backface-visibility: visible;
+    @include breakpoint(750px) {
+      width: 100%;
+      margin: 0 0 24px;
+      max-width: 420px;
+    }
+    &:hover {
+      background: $primary;
+      h3, p {
+        color: $white;
+      }
+      &:before {
+        opacity: 0;
+      }
+      .image {
+        opacity: .15;
+      }
+    }
+    &:before {
+      @include content100;
+      box-shadow: $shadow;
+      transition: $dt;
+      opacity: 1;
+      border-radius: 6px;
+    }
+    .image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      opacity: 0;
+      transition: $dt;
+    }
+    section {
+      position: relative;
+      padding: 50px;
+      z-index: 100;
+      @include breakpoint(960px) {
+        padding: 40px;
+      }
+      @include breakpoint(600px) {
+        padding: 30px;
+        font-size: 80%;
+      }
+    }
+    h3, &__heading {
+      @include h3;
+      transition: $dt;
+    }
+    p {
+      @include p-small;
+      color: $grey-dark;
+      transition: $dt;
+      @include breakpoint(700px) {
+        margin-bottom: 15px;
+      }
+    }
+    a {
+      &:before {
+        @include content100;
+      }
+    }
+  }
+}

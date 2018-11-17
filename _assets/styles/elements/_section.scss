@@ -1,0 +1,8 @@
+//Section
+.section {
+  width: 100%;
+  padding: 120px 0;
+  @include breakpoint(900px) {
+    padding: 60px 0;
+  }
+}

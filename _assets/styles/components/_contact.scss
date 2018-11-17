@@ -1,0 +1,85 @@
+//Contact
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background: $primary url(../resources/contact-bg.png) no-repeat top right;
+  background-size: 1450px;
+  color: $white;
+  padding: 150px 0 40px;
+  @include breakpoint(1170px) {
+    background-size: 1170px;
+  }
+  @include breakpoint(700px) {
+    background-position: center top;
+  }
+  .container {
+    max-width: 600px;
+  }
+  .heading {
+    &__heading {
+      margin-bottom: 15px;
+      em {
+        color: $secondary;
+      }
+    }
+  }
+  &__details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    @include breakpoint(500px) {
+      padding: 15px 0 10px;
+      margin: 15px 0px;
+      border-top: 1px solid rgba(255,255,255,.3);
+      border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+    a {
+      color: $white;
+      transition: $dt;
+      @include breakpoint(500px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      &:hover {
+        color: $primary;
+      }
+      .icon {
+        width: 14px;
+        margin-right: 15px;
+      }
+      span {
+        display: inline-block;
+      }
+    }
+  }
+  &__form {
+    width: 100%;
+    text-align: center;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+    }
+    input[type="submit"] {
+      width: 160px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    li {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .half {
+      width: 48%;
+      @include breakpoint(500px) {
+        width: 100%;
+      }
+    }
+  }
+}

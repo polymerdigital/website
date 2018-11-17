@@ -1,0 +1,238 @@
+//Main-Header
+.main-header {
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4000;
+  background: $primary;
+  &.overflow {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 180px;
+    padding: 15px 0;
+  }
+  .btn {
+    display: block;
+    padding: 15px 20px;
+    background: $secondary;
+    transition: $dt;
+    width: 100px;
+    text-align: center;
+    line-height: 1.3;
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    //Mobile Click Dropdown
+    @include breakpoint(760px) {
+      display: none;
+      &.active {
+        display: flex;
+        @include animated(.5s);
+        @include fadeIn;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        width: calc(100% - 60px);
+        background: $white;
+        ul {
+          width: 100%;
+          margin: 0;
+        }
+        li {
+          width: 100%;
+          border-bottom: 1px solid $grey-light;
+          &:last-of-type {
+            border: none;
+          }
+          a {
+            color: $secondary;
+            padding: 12px 20px;
+          }
+        }
+        .btn {
+          width: 100%;
+        }
+        .dropdown {
+          display: none;
+          &.active {
+            display: block;
+            @include animated(.375s);
+            @include fadeInLeft;
+          }
+        }
+      }
+    }
+    ul {
+      display: block;
+      margin-right: 10px;
+    }
+    li {
+      display: inline-block;
+      position: relative;
+
+      //Desktop Hover Dropdown
+      @include breakpoint(761px, min-width) {
+        &:hover {
+          .dropdown {
+            display: block;
+            @include animated(.375s);
+            @include fadeInDown;
+          }
+          > .with-dropdown {
+            color: $secondary;
+            background: rgba(0,0,0,.1);
+          }
+        }
+        .dropdown {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          background: $white;
+          box-shadow: $shadow;
+          width: 222px;
+          padding: 0px 40px;
+        }
+      }
+      .dropdown {
+        padding: 0px 20px;
+        img {
+          display: inline-block;
+          width: 20px;
+          margin-right: 10px;
+        }
+        li {
+          width: 100%;
+          border-bottom: 1px solid $grey-light;
+          &:last-of-type {
+            border: none;
+          }
+        }
+        a {
+          color: $primary;
+          text-transform: none;
+          font-size: .75em;
+          font-weight: 600;
+          letter-spacing: 0;
+          display: flex;
+          align-items: center;
+          padding: 12px 0;
+          &:hover {
+            color: $secondary;
+            background: none;
+          }
+        }
+      }
+    }
+    a {
+      @include h4(0);
+      color: $white;
+      transition: $dt;
+      display: block;
+      padding: 22px 18px;
+      &.with-dropdown {
+        padding-right: 28px;
+        position: relative;
+        &.active {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+        &:after {
+          content: '';
+          background: url(../resources/arrow.svg) no-repeat center center;
+          background-size: contain;
+          width: 8px;
+          height: 5px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -2px;
+          transition: $dt;
+          @include breakpoint(760px) {
+            width: 11px;
+            height: 7px;
+            right: 20px;
+            margin-top: -4px;
+          }
+        }
+      }
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  &__menu {
+    width: 30px;
+    height: 25px;
+    display: none;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    @include breakpoint(760px) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &.active {
+      span {
+        background: rgba(0,0,0,0);
+        &:before {
+          transform: rotate(-45deg) scale(1);
+          bottom: auto;
+          top: 0px;
+        }
+        &:after {
+          transform: rotate(45deg);
+          top: 0px;
+        }
+      }
+    }
+    span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      position: relative;
+      background-image: linear-gradient(-72deg, #FF542E 14%, #FF6C5F 64%, #F7A91E 100%);
+      text-indent: -9999em;
+      top: 0px;
+      transition: $dt;
+      &:after,
+      &:before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(-72deg, #FF542E 14%, #FF6C5F 64%, #F7A91E 100%);
+        position: absolute;
+        transition: $dt;
+        backface-visibility: hidden;
+        right: 0;
+      }
+      &:after {
+        top: -10px;
+      }
+      &:before {
+        bottom: -10px;
+      }
+    }
+  }
+}

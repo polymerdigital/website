@@ -1,0 +1,128 @@
+//Work Grid
+.work-grid {
+  width: 100%;
+  padding-top: 60px;
+  .container {
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  &__half {
+    width: 50%;
+    background: red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    &:last-child {
+      background: blue;
+    }
+    @include breakpoint(900px) {
+      width: 100%;
+      min-height: 430px;
+    }
+  }
+  &__item {
+    width: 50%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
+    padding-top: 110px;
+    color: $white;
+    overflow: hidden;
+    background-color: $secondary;
+    @include breakpoint(500px) {
+      width: 100%;
+      padding-top: 150px;
+    }
+    &:before {
+      @include content100;
+      background-image: url(../resources/corner.svg);
+      background-position: bottom right;
+      background-repeat: no-repeat;
+    }
+    &.green {
+      background: #3D7076;
+    }
+    &.blue {
+      background: #065EB1;
+    }
+    &.red {
+      background: #B20039;
+    }
+    &:hover {
+      h3 {
+        transform: translateY(-5px);
+      }
+      .image {
+        transform: translateX(-50%) scale(1.05);
+      }
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      z-index: 0;
+      transition: all .5s ease-in-out;
+    }
+    &--large {
+      width: 100%;
+      overflow: visible;
+      .image {
+        left: 20px;
+        top: -60px;
+        height: 100%;
+        transform: none;
+        background-size: contain;
+      }
+      &:hover {
+        .image {
+          left: 20px;
+          top: -60px;
+          transform: scale(1.05);
+        }
+      }
+      &:before {
+        display: none;
+      }
+    }
+    .content {
+
+    }
+    h3 {
+      @include h3(10px);
+      transition: $dt;
+    }
+    p {
+      @include h4();
+    }
+    .cover {
+      color: transparent;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      text-indent: -999em;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .button-container {
+    margin-top: 30px;
+  }
+}

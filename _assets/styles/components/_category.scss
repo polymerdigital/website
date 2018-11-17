@@ -1,0 +1,44 @@
+.category {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  color: $white;
+  p {
+    @include h4(0);
+    position: relative;
+    top: 1px;
+  }
+  ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid $white;
+    display: inline-block;
+    li {
+      margin-right: 15px;
+      display: inline-block;
+      @include h4(0);
+      font-weight: 400;
+    }
+  }
+  a {
+    color: $white;
+    transition: $dt;
+    &:hover, &.active {
+      color: $secondary;
+    }
+  }
+  &--dark {
+    color: $primary;
+    ul {
+      border-left: 1px solid $primary;
+    }
+    a {
+      color: $primary;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}

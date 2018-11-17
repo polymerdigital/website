@@ -1,0 +1,107 @@
+//Testimonials
+.testimonials {
+  width: 100%;
+  position: relative;
+  @include breakpoint(570px) {
+    font-size: 80%;
+  }
+  .container {
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(1260px) {
+      padding: 0 0 0 40px;
+    }
+  }
+  &__heading {
+    width: 480px;
+    padding: 0 100px;
+    @include breakpoint(1260px) {
+      padding: 0;
+      width: 300px;
+    }
+    @include breakpoint(900px) {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    h2 {
+      max-width: 240px;
+      @include blockquote;
+      @include breakpoint(900px) {
+        max-width: 100%;
+      }
+    }
+  }
+  &__slider {
+    background: $primary;
+    color: $white;
+    width: calc(100% - 500px);
+    padding: 180px;
+    position: relative;
+    @include breakpoint(1260px) {
+      padding: 120px;
+      width: calc(100% - 340px)
+    }
+    @include breakpoint(1000px) {
+      padding: 80px;
+    }
+    @include breakpoint(900px) {
+      width: 100%;
+    }
+    @include breakpoint(550px) {
+      padding: 80px 40px;
+    }
+    .slick-prev {
+      display: none !important;
+    }
+    .slick-next {
+      appearance: none;
+      text-indent: -999em;
+      display: block;
+      position: absolute;
+      left: -36px;
+      bottom: 72px;
+      width: 75px;
+      height: 75px;
+      border: none;
+      background: url(../resources/slider-arrow.svg) no-repeat center center;
+      background-size: cover;
+      cursor: pointer;
+      @include breakpoint(900px) {
+        left: -20px;
+        bottom: auto;
+        top: -36px;
+      }
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        &:before {
+          opacity: 0;
+        }
+      }
+      &:before {
+        @include content100;
+        box-shadow: $shadow;
+        transition: $dt;
+      }
+    }
+  }
+  blockquote {
+    max-width: 700px;
+    cite {
+      display: block;
+      margin-bottom: 20px;
+      strong {
+        display: block;
+      }
+    }
+    p {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}

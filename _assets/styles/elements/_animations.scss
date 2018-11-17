@@ -1,0 +1,21 @@
+//Animations
+@include setup-fadeInUp;
+@include setup-fadeIn;
+@include setup-fadeOut;
+@include setup-fadeInLeft;
+@include setup-fadeInRight;
+@include setup-fadeInDown;
+@include setup-fadeOutDown;
+@include setup-puffIn;
+
+@keyframes moveLoop {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(10px);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes pulsing {
+  0% {transform: scale(1.2);}
+  50% {transform: scale(1.3);}
+  100% {transform: scale(1.2);}
+}
