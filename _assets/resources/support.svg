@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="70px" viewBox="0 0 63 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/support</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="support" transform="translate(4.000000, 9.000000)">
+            <path d="M45,34.8725586 C45,24.3060884 45,18.5152355 45,17.5 C45,7.83501688 37.1649831,0 27.5,0 C17.8350169,0 10,7.83501688 10,17.5 C10,20.4354605 10,34.8725586 10,34.8725586 C10,42.9067383 16.0419922,48.6416016 27.5,48.6416016" id="Oval" stroke="#1A237E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval-3" fill="#FF5722" cx="28" cy="49" r="5"></circle>
+            <path d="M45,35 C50.5228475,35 55,30.5228475 55,25 C55,19.4771525 50.5228475,15 45,15" id="Oval-2" stroke="#1A237E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M0,35 C5.5228475,35 10,30.5228475 10,25 C10,19.4771525 5.5228475,15 0,15" id="Oval-2-Copy" stroke="#1A237E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(5.000000, 25.000000) scale(-1, 1) translate(-5.000000, -25.000000) "></path>
+        </g>
+    </g>
+</svg>

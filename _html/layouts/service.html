@@ -1,0 +1,33 @@
+{% include header.html %}
+
+<div class="with-side">
+  <div class="container">
+    <aside class="with-side__sidebar">
+      <ul>
+        {% for service in site.data.services %}
+          <li><a href="{{ service.url }}"{% if service.title == page.title %} class="active"{% endif %}">{{ service.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+    <div class="with-side__content content">
+      {% for service in site.data.services %}
+        {% if service.title == page.title %}
+          <img width="40" src="{{ site.url }}/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
+        {% endif %}
+      {% endfor %}
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<div class="banner" style="background-image:url({{ site.url }}/assets/resources/cta.jpg);">
+  <div class="container">
+    <section class="banner__content">
+      <h2>Have a project we <br><em>can help</em> with?</h2>
+      <p>Let us show you that web design really doesn't have to be hard</p>
+      <a href="{{ site.url }}/contact-us/" class="button button--light">Contact Us</a>
+    </section> <!-- / __content -->
+  </div> <!-- / .container -->
+</div> <!-- / .banner -->
+
+{% include footer.html %}

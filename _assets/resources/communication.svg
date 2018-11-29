@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="70px" viewBox="0 0 63 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/communication</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/communication" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(3.000000, 9.000000)" fill-rule="nonzero" stroke-width="3">
+            <path d="M33.3668941,30.1957199 L7.48656493,30.1957199 C7.24985492,30.1957199 7.01908507,30.2622926 6.81803599,30.3884464 L-1.5,35.6305985 L-1.5,3.52505101 C-1.5,0.752647507 0.752647507,-1.5 3.52505101,-1.5 L33.3418431,-1.5 C36.1142466,-1.5 38.3668941,0.752647507 38.3668941,3.52505101 L38.3668941,25.1957199 C38.3668941,27.9571437 36.1283178,30.1957199 33.3668941,30.1957199 Z" id="Path" stroke="#1A237E"></path>
+            <path d="M53.3668941,49.1957199 L27.4865649,49.1957199 C27.2498549,49.1957199 27.0190851,49.2622926 26.818036,49.3884464 L18.5,54.6305985 L18.5,22.525051 C18.5,19.7526475 20.7526475,17.5 23.525051,17.5 L53.3418431,17.5 C56.1142466,17.5 58.3668941,19.7526475 58.3668941,22.525051 L58.3668941,44.1957199 C58.3668941,46.9571437 56.1283178,49.1957199 53.3668941,49.1957199 Z" id="Path-Copy" stroke="#FF5722" transform="translate(38.433447, 35.456123) scale(-1, 1) translate(-38.433447, -35.456123) "></path>
+        </g>
+    </g>
+</svg>

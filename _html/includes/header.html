@@ -24,42 +24,14 @@
                         <li>
                             <a class="with-dropdown" href="{{ site.url }}/what-we-do">What We Do</a>
                             <ul class="dropdown">
-                                <li>
-                                    <a href="{{ site.url }}/what-we-do/discovery">
-                                        <img alt="Discovery" src="{{ site.url }}/assets/resources/service-icon.svg">
-                                        <span>Discovery</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ site.url }}/what-we-do/communication">
-                                        <img alt="Communication" src="{{ site.url }}/assets/resources/service-icon.svg">
-                                        <span>Communication</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ site.url }}/what-we-do/design">
-                                        <img alt="Design" src="{{ site.url }}/assets/resources/service-icon.svg">
-                                        <span>Design</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ site.url }}/what-we-do/development">
-                                        <img alt="Development" src="{{ site.url }}/assets/resources/service-icon.svg">
-                                        <span>Development</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ site.url }}/what-we-do/support">
-                                        <img alt="Support" src="{{ site.url }}/assets/resources/service-icon.svg">
-                                        <span>Support</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ site.url }}/what-we-do/partnerships">
-                                        <img alt="Partnerships" src="{{ site.url }}/assets/resources/service-icon.svg">
-                                        <span>Partnerships</span>
-                                    </a>
-                                </li>
+                                {% for service in site.data.services %}
+                                    <li>
+                                        <a href="{{ site.url }}{{ service.url }}">
+                                            <img alt="{{ service.title }}" src="{{ site.url }}/assets/resources/{{ service.icon }}">
+                                            <span>{{ service.title }}</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </li>
                         <li>

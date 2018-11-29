@@ -1,0 +1,23 @@
+- title: Design
+  icon: design.svg
+  url: /what-we-do/design/
+
+- title: Development
+  icon: development.svg
+  url: /what-we-do/development/
+
+- title: Discovery
+  icon: discovery.svg
+  url: /what-we-do/discovery/
+
+- title: Communication
+  icon: communication.svg
+  url: /what-we-do/communication/
+
+- title: Support
+  icon: support.svg
+  url: /what-we-do/support/
+
+- title: Partnerships
+  icon: partnership.svg
+  url: /what-we-do/partnerships/

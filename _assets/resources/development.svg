@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="70px" viewBox="0 0 63 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/development</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="development" transform="translate(1.000000, 8.000000)" stroke-width="3">
+            <path d="M23,53.9384766 L38.25,0" id="Path-2" stroke="#1A237E"></path>
+            <polyline id="Path-3" stroke="#FF5722" points="50 17 60 27 50 37"></polyline>
+            <polyline id="Path-3-Copy" stroke="#FF5722" transform="translate(5.573242, 27.000000) scale(-1, 1) translate(-5.573242, -27.000000) " points="0.573242188 17 10.5732422 27 0.573242188 37"></polyline>
+        </g>
+    </g>
+</svg>

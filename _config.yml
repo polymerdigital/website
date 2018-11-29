@@ -16,6 +16,10 @@ collections:
   articles:
     permalink:         /articles/:path/
     output:            true
+  services:
+    permalink:         /what-we-do/:path/
+    layout:            service
+    output:            true
 
 # Defaults
 defaults:
@@ -25,6 +29,12 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
 
 # Build settings
 markdown: kramdown

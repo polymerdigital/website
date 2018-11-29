@@ -49,42 +49,14 @@ permalink: :path
       <h2>What we do</h2>
     </div> <!-- / .heading -->
     <div class="services">
-      <div class="services__item">
-        <div class="services__item__inner">
-          <img src="{{ site.url }}/assets/resources/service-icon.svg" alt="Discovery">
-          <a href="{{ site.url }}/what-we-do/discovery">Discovery</a>
-        </div> <!-- / __inner -->
-      </div> <!-- / __item -->
-      <div class="services__item">
-        <div class="services__item__inner">
-          <img src="{{ site.url }}/assets/resources/service-icon.svg" alt="Discovery">
-          <a href="{{ site.url }}/what-we-do/communication">Communication</a>
-        </div> <!-- / __inner -->
-      </div> <!-- / __item -->
-      <div class="services__item">
-        <div class="services__item__inner">
-          <img src="{{ site.url }}/assets/resources/service-icon.svg" alt="Discovery">
-          <a href="{{ site.url }}/what-we-do/design">Design</a>
-        </div> <!-- / __inner -->
-      </div> <!-- / __item -->
-      <div class="services__item">
-        <div class="services__item__inner">
-          <img src="{{ site.url }}/assets/resources/service-icon.svg" alt="Discovery">
-          <a href="{{ site.url }}/what-we-do/development">Development</a>
-        </div> <!-- / __inner -->
-      </div> <!-- / __item -->
-      <div class="services__item">
-        <div class="services__item__inner">
-          <img src="{{ site.url }}/assets/resources/service-icon.svg" alt="Discovery">
-          <a href="{{ site.url }}/what-we-do/support">Support</a>
-        </div> <!-- / __inner -->
-      </div> <!-- / __item -->
-      <div class="services__item">
-        <div class="services__item__inner">
-          <img src="{{ site.url }}/assets/resources/service-icon.svg" alt="Discovery">
-          <a href="{{ site.url }}/what-we-do/partnerships">Partnerships</a>
-        </div> <!-- / __inner -->
-      </div> <!-- / __item -->
+      {% for service in site.data.services %}
+        <div class="services__item">
+          <div class="services__item__inner">
+            <img src="{{ site.url }}/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
+            <a href="{{ site.url }}{{ service.url }}">{{ service.title }}</a>
+          </div> <!-- / __inner -->
+        </div> <!-- / __item -->
+      {% endfor %}
     </div> <!-- / .services -->
   </div> <!-- / .container -->
 </div> <!-- / .section -->
