@@ -1,0 +1,49 @@
+//Page Nav
+.page-nav {
+  width: 100%;
+  @include breakpoint(950px) {
+    display: none;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__arrows {
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-left: 40px;
+    }
+    a {
+      display: block;
+      width: 20px;
+      &:hover {
+        .short-a {
+          fill: $secondary;
+        }
+      }
+    }
+    .short-a {
+      fill: $primary;
+    }
+  }
+   &__nav {
+     display: inline-block;
+     li {
+       display: inline-block;
+       margin-right: 60px;
+     }
+     a {
+       @include h4(0);
+       display: block;
+       color: $grey;
+       transition: $dt;
+       padding: 28px 0;
+       &:hover {
+         color: $primary;
+       }
+     }
+   }
+}

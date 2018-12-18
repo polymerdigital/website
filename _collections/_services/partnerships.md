@@ -1,6 +1,5 @@
 ---
 title: Partnerships
-seo_title: Partnerships
 ---
 
 # Partnerships

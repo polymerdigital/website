@@ -1,40 +1,31 @@
 //Three Column
 .three-col {
-  float: left;
   width: 100%;
   padding: 40px 0;
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .col {
-    width: calc((100% / 3) - 34px);
-    margin-right: 50px;
-    margin-bottom: 80px;
-    float: left;
+  display: flex;
+  flex-wrap: wrap;
+  &__col {
+    width: calc((100% / 3) - 30px);
+    margin-right: 40px;
+    margin-bottom: 40px;
     &:nth-child(3n) {
       margin-right: 0;
-      @include breakpoint(900px) {
+      @include breakpoint(850px) {
         margin-right: auto;
       }
     }
-    @include breakpoint(1120px) {
-      width: calc((100% / 3) - 14px);
-      margin-right: 20px;
-    }
-    @include breakpoint(900px) {
+    @include breakpoint(850px) {
       width: calc((100% / 2) - 14px);
       margin-right: 0;
       &:nth-child(2n) {
         margin-left: 20px;
       }
     }
-    @include breakpoint(900px) {
+    @include breakpoint(500px) {
       width: 100%;
-      margin-bottom: 60px;
+      margin-right: 0;
       &:nth-child(2n) {
-        margin-left: 0;
+        margin-left: 0px;
       }
     }
   }
@@ -42,17 +33,13 @@
 
 //Two Columns
 .two-col {
-  float: left;
   width: 100%;
   padding: 0;
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .col {
-    width: calc((100% / 2) - 40px);
-    margin-right: 80px;
-    float: left;
+  display: flex;
+  flex-wrap: wrap;
+  &__col {
+    width: calc((100% / 2) - 80px);
+    margin-right: 160px;
     &:nth-child(even) {
       margin-right: 0;
     }
@@ -60,7 +47,7 @@
       width: calc((100% / 2) - 20px);
       margin-right: 40px;
     }
-    @include breakpoint(700px) {
+    @include breakpoint(500px) {
       width: 100%;
       margin-right: 0;
     }

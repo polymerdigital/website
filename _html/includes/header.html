@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport"/>
         <link href="{{ site.url }}/assets/resources/favicon.png" rel="icon">
-        <title>{{ page.seo_title }}
-            - Polymer Digital</title>
+        <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %} - Polymer Digital</title>
         <link href="https://fonts.googleapis.com/css?family=Exo+2:600,700,700i|Muli:400,600i" rel="stylesheet">
         <link href="{{ site.url }}/assets/styles/application.css" rel="stylesheet">
     </head>

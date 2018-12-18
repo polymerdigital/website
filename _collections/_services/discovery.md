@@ -1,6 +1,5 @@
 ---
 title: Discovery
-seo_title: Discovery
 ---
 
 # Discovery

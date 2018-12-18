@@ -1,6 +1,5 @@
 ---
 title: Design
-seo_title: Design
 ---
 
 # Design

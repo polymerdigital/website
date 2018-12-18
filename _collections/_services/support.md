@@ -1,6 +1,5 @@
 ---
 title: Support
-seo_title: Support
 ---
 
 # Support

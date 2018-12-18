@@ -77,57 +77,72 @@ permalink: :path
         <h2>Some of our work</h2>
       </div> <!-- / .heading -->
     </div> <!-- / .container -->
-    <div class="work-grid">
+    
+    <div class="work-grid2">
       <div class="container">
-        <div class="work-grid__half">
-          <div class="work-grid__item work-grid__item--large" style="background-image:url(assets/resources/case-study-1.svg);">
-            <div class="content">
-              <h3>House of Ideas</h3>
-              <a class="cover" href="{{ site.url }}/projects/house-of-ideas/">View Project</a>
-              <div class="image" style="background-image:url(assets/resources/chart.png);"></div> <!-- / .hightlight -->
-            </div> <!-- / .content -->
-          </div> <!-- / __item -->
-        </div> <!-- / __half -->
-        <div class="work-grid__half">
-          <div class="work-grid__row">
-            <div class="work-grid__item gradient">
-              <div class="content">
-                <h3>SecureSheet</h3>
-                <p>Technology</p>
-                <a class="cover" href="{{ site.url }}/projects/securesheet/">View Project</a>
-              </div> <!-- / .content -->
-              <div class="image" style="background-image:url(assets/resources/work-example-1.png);"></div> <!-- / .image -->
-            </div> <!-- / __item -->
-            <div class="work-grid__item green">
-              <div class="content">
-                <h3>American Daylily Society</h3>
-                <p>Non-Profit</p>
-                <a class="cover" href="{{ site.url }}/projects/american-daylily-society/">View Project</a>
-              </div> <!-- / .content -->
-              <div class="image" style="background-image:url(assets/resources/work-example-1.png);"></div> <!-- / .image -->
-            </div> <!-- / __item -->
-          </div> <!-- / __row -->
-          <div class="work-grid__row">
-            <div class="work-grid__item blue">
-              <div class="content">
-                <h3>Integrated Rehab Consultants</h3>
-                <p>Healthcare</p>
-                <a class="cover" href="{{ site.url }}/projects/integrated-rehab-consultants/">View Project</a>
-              </div> <!-- / .content -->
-              <div class="image" style="background-image:url(assets/resources/work-example.png);"></div> <!-- / .image -->
-            </div> <!-- / __item -->
-            <div class="work-grid__item red">
-              <div class="content">
-                <h3>Simon Keith</h3>
-                <p>Non-Profit</p>
-                <a class="cover" href="{{ site.url }}/projects/simon-keith/">View Project</a>
-              </div> <!-- / .content -->
-              <div class="image" style="background-image:url(assets/resources/work-example-2.png);"></div> <!-- / .image -->
-            </div> <!-- / __item -->
-          </div> <!-- / __row -->
-        </div> <!-- / __half -->
-      </div> <!-- / .container -->
-    </div> <!-- / .work-grid -->
+
+        <a href="{{ site.url }}/work/securesheet/" class="work-preview">
+          <div class="chrome">
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            SecureSheet
+          </div>
+          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-securesheet-thumbnail.jpg);"></div>
+        </a>
+
+        <a href="{{ site.url }}/work/house-of-ideas/" class="work-preview">
+          <div class="chrome">
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            House of Ideas
+          </div>
+          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-hoi-thumbnail.jpg);"></div>
+        </a>
+
+        <a href="{{ site.url }}/work/american-daylily-society/" class="work-preview">
+          <div class="chrome">
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            American Daylily Society
+          </div>
+          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-ads-thumbnail.jpg);"></div>
+        </a>
+
+        <a href="{{ site.url }}/work/the-overhead-door-co/" class="work-preview">
+          <div class="chrome">
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            The Overhead Door Co
+          </div>
+          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-odc-thumbnail.jpg);"></div>
+        </a>
+
+        <a href="{{ site.url }}/work/integrated-rehab-consultants/" class="work-preview">
+          <div class="chrome">
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            Integrated Rehab Consultants
+          </div>
+          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-irc-thumbnail.jpg);"></div>
+        </a>
+
+        <a href="{{ site.url }}/work/rhea-space-activity/" class="work-preview">
+          <div class="chrome">
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            <span class="chrome-button"></span>
+            Rhea Space Activity
+          </div>
+          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-rsa-thumbnail.jpg);"></div>
+        </a>
+
+      </div><!-- / . container -->
+    </div><!-- / .work-grid2 -->
   </div> <!-- / .section -->
 
     <div class="section">
@@ -136,12 +151,13 @@ permalink: :path
         <h2>Featured Articles</h2>
       </div> <!-- / heading -->
       <div class="blog">
-        {% for post in site.articles limit:3 %}
+        {% assign posts = site.articles | sort: 'date' | reverse %}
+        {% for post in posts %}
           <div class="blog__item">
             <section>
               <h3>{{ post.title }}</h3>
               <p>{{ post.preview }}</p>
-              <a href="{{ post.permalink }}" class="button button--line">Read More</a>
+              <a href="{{ post.url }}" class="button button--line">Read More</a>
             </section>
             <div class="image" style="background-image:url({{ site.url }}/assets/resources/{{ post.featured_image }});"></div>
           </div> <!-- / __item -->

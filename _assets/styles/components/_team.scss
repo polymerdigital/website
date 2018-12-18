@@ -8,6 +8,100 @@
     padding: 0 26px;
     max-width: 1252px;
   }
+  &__item {
+    width: calc((100% / 4) - 20px);
+    margin: 0 10px 20px;
+    position: relative;
+    background: $primary;
+    color: $white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 26px;
+    border-radius: 6px;
+    &:before {
+      @include content100;
+      transition: $dt;
+      box-shadow: $shadow;
+    }
+    @include breakpoint(1000px) {
+      width: calc((100% / 3) - 20px);
+    }
+    @include breakpoint(870px) {
+      width: calc((100% / 2) - 20px);
+    }
+    @include breakpoint(500px) {
+      width: 100%;
+      margin: 0 0 15px;
+    }
+    &:hover {
+      .image {
+        opacity: .78;
+      }
+      &:before {
+        opacity: 0;
+      }
+    }
+    .image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-position: top right;
+      background-size: cover;
+      opacity: .6;
+      border-radius: 6px;
+      transition: $dt;
+      &:before {
+        @include content100;
+        border-radius: 6px;
+        background-image: $blue-grad;
+      }
+    }
+  }
+  &__inner {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    h2, h3, h4 {
+      @include h3(5px);
+      @include breakpoint(650px) {
+        font-size: 1.25em;
+      }
+    }
+    p {
+      @include p-small(10px);
+      @include breakpoint(650px) {
+        margin-bottom: 5px;
+      }
+    }
+    .link {
+      color: $white;
+      font-size: .875em;
+      font-weight: 600;
+      font-family: $exo;
+      position: relative;
+      padding-bottom: 2px;
+      display: inline-block;
+      z-index: 100;
+      &:hover {
+        &:before {
+          transform: scale(0);
+        }
+      }
+      &:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background: $secondary;
+        bottom: 0;
+        left: 0;
+        transition: $dt;
+      }
+    }
+  }
   &__member {
     width: calc((100% / 3) - 28px);
     margin: 0 14px 36px;

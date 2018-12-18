@@ -35,6 +35,12 @@ defaults:
       type: "services"
     values:
       layout: "service"
+  -
+    scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
 
 # Build settings
 markdown: kramdown

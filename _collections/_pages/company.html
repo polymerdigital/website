@@ -39,19 +39,65 @@ seo_title: About Our Company
   </div> <!-- / .container -->
   <div class="team">
     <div class="container">
-      {% for person in site.data.team %}
-        <div class="team__member">
-          <div class="team__image">
-            <img src="{{ site.url }}/assets/resources/{{ person.image }}" alt="{{ person.name }}">
-          </div> <!-- / __image -->
-          <div class="team__info">
-            <h3>{{ person.name }}</h3>
-            <p>{{ person.title }}</p>
-          </div> <!-- / __info -->
-        </div> <!-- / __member -->
-      {% endfor %}
-    </div> <!-- / .container -->
-  </div> <!-- / .team -->
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Brian McCoy</h3>
+          <p>Principal</p>
+          <a href="https://www.linkedin.com/in/brian-mccoy-7b901a54/" class="link" target="_BLANK">Linkedin</a>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/brian.jpg);"></span>
+      </div> <!-- / __item -->
+
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Jacob Coury</h3>
+          <p>Designer</p>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/jacob.jpg);"></span>
+      </div> <!-- / __item -->
+
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Justin Laxamana</h3>
+          <p>Developer</p>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/justin.jpg);"></span>
+      </div> <!-- / __item -->
+
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Alen Parlov</h3>
+          <p>Designer</p>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/alen.jpg);"></span>
+      </div> <!-- / __item -->
+
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Chris D'Antonio</h3>
+          <p>Designer</p>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/chris.jpg);"></span>
+      </div> <!-- / __item -->
+
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Jordan Whalen</h3>
+          <p>Developer</p>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/jordan.jpg);"></span>
+      </div> <!-- / __item -->
+
+      <div class="team__item">
+        <div class="team__inner">
+          <h3>Jesse Dillman</h3>
+          <p>Developer</p>
+        </div> <!-- / __inner -->
+        <span class="image" style="background-image:url({{ site.url }}/assets/resources/jesse.jpg);"></span>
+      </div> <!-- / __item -->
+
+    </div>
+  </div>
 </div> <!-- / .section -->
 
 <div class="testimonials">
@@ -70,12 +116,12 @@ seo_title: About Our Company
   </div> <!-- / .container -->
 </div> <!-- / .testimonials -->
 
-<div class="banner banner--light" style="background-image:url({{ site.url }}/assets/resources/banner.svg);">
+<div class="banner" style="background-image:url({{ site.url }}/assets/resources/cta.jpg);">
   <div class="container">
     <section class="banner__content">
-      <h2>Let's Talk</h2>
-      <p>We love meeting new people — drop us a line!</p>
-      <a href="#" class="button button--white">Contact Us</a>
+      <h2>We <em>love</em> meeting new people!</h2>
+      <p>Whether you're a designer, developer or potential customer we love finding out what makes people unique and interesting.</p>
+      <a href="{{ site.url }}/contact" class="button button--light">Let's Chat</a>
     </section> <!-- / __content -->
   </div> <!-- / .container -->
 </div> <!-- / .banner -->

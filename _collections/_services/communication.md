@@ -1,6 +1,5 @@
 ---
 title: Communication
-seo_title: Communication
 ---
 
 # Communication
