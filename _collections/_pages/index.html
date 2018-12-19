@@ -24,20 +24,20 @@ permalink: :path
         </section> <!-- / __content -->
       </div> <!-- / __side -->
       <div class="row__side">
-        <img src="{{ site.url }}/assets/resources/phone.png" alt="phone">
+        <img src="/assets/resources/phone.png" alt="phone">
       </div> <!-- / __side -->
     </div> <!-- / .container -->
   </div> <!-- / .row -->
   <div class="row">
     <div class="container">
       <div class="row__side">
-        <img class="small" src="{{ site.url }}/assets/resources/illustration.png" alt="illustration">
+        <img class="small" src="/assets/resources/illustration.png" alt="illustration">
       </div> <!-- / __side -->
       <div class="row__side">
         <section class="row__content">
           <h2>We're a customer service company specializing in web design</h2>
           <p>Your satisfaction is our priority. We believe in working with great teammates for amazing people on awesome projects. Whether it's a marketing website, an eCommerce store, or a web app we'll help you with a smile!</p>
-          <a href="{{ site.url }}/company/" class="button button--line button--line--light">Learn More</a>
+          <a href="/company/" class="button button--line button--line--light">Learn More</a>
         </section> <!-- / __content -->
       </div> <!-- / __side -->
     </div> <!-- / .container -->
@@ -52,8 +52,8 @@ permalink: :path
       {% for service in site.data.services %}
         <div class="services__item">
           <div class="services__item__inner">
-            <img src="{{ site.url }}/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
-            <a href="{{ site.url }}{{ service.url }}">{{ service.title }}</a>
+            <img src="/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
+            <a href="{{ service.url }}">{{ service.title }}</a>
           </div> <!-- / __inner -->
         </div> <!-- / __item -->
       {% endfor %}
@@ -61,12 +61,12 @@ permalink: :path
   </div> <!-- / .container -->
 </div> <!-- / .section -->
 
-<div class="banner" style="background-image:url({{ site.url }}/assets/resources/cta.jpg);">
+<div class="banner" style="background-image:url(/assets/resources/cta.jpg);">
   <div class="container">
     <section class="banner__content">
       <h2>Hiring a web design studio <em>shouldn't</em> be difficult</h2>
       <p>Let us show you how fun and stress free working with a real and authentic team can be!</p>
-      <a href="{{ site.url }}/contact" class="button button--light">Contact Us</a>
+      <a href="/contact" class="button button--light">Contact Us</a>
     </section> <!-- / __content -->
   </div> <!-- / .container -->
 </div> <!-- / .banner -->
@@ -81,64 +81,64 @@ permalink: :path
     <div class="work-grid2">
       <div class="container">
 
-        <a href="{{ site.url }}/work/securesheet/" class="work-preview">
+        <a href="/work/securesheet/" class="work-preview">
           <div class="chrome">
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             SecureSheet
           </div>
-          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-securesheet-thumbnail.jpg);"></div>
+          <div class="thumbnail" style="background-image: url(/assets/resources/work-securesheet-thumbnail.jpg);"></div>
         </a>
 
-        <a href="{{ site.url }}/work/house-of-ideas/" class="work-preview">
+        <a href="/work/house-of-ideas/" class="work-preview">
           <div class="chrome">
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             House of Ideas
           </div>
-          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-hoi-thumbnail.jpg);"></div>
+          <div class="thumbnail" style="background-image: url(/assets/resources/work-hoi-thumbnail.jpg);"></div>
         </a>
 
-        <a href="{{ site.url }}/work/american-daylily-society/" class="work-preview">
+        <a href="/work/american-daylily-society/" class="work-preview">
           <div class="chrome">
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             American Daylily Society
           </div>
-          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-ads-thumbnail.jpg);"></div>
+          <div class="thumbnail" style="background-image: url(/assets/resources/work-ads-thumbnail.jpg);"></div>
         </a>
 
-        <a href="{{ site.url }}/work/the-overhead-door-co/" class="work-preview">
+        <a href="/work/the-overhead-door-co/" class="work-preview">
           <div class="chrome">
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             The Overhead Door Co
           </div>
-          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-odc-thumbnail.jpg);"></div>
+          <div class="thumbnail" style="background-image: url(/assets/resources/work-odc-thumbnail.jpg);"></div>
         </a>
 
-        <a href="{{ site.url }}/work/integrated-rehab-consultants/" class="work-preview">
+        <a href="/work/integrated-rehab-consultants/" class="work-preview">
           <div class="chrome">
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             Integrated Rehab Consultants
           </div>
-          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-irc-thumbnail.jpg);"></div>
+          <div class="thumbnail" style="background-image: url(/assets/resources/work-irc-thumbnail.jpg);"></div>
         </a>
 
-        <a href="{{ site.url }}/work/rhea-space-activity/" class="work-preview">
+        <a href="/work/rhea-space-activity/" class="work-preview">
           <div class="chrome">
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             <span class="chrome-button"></span>
             Rhea Space Activity
           </div>
-          <div class="thumbnail" style="background-image: url({{ site.url }}/assets/resources/work-rsa-thumbnail.jpg);"></div>
+          <div class="thumbnail" style="background-image: url(/assets/resources/work-rsa-thumbnail.jpg);"></div>
         </a>
 
       </div><!-- / . container -->
@@ -159,11 +159,11 @@ permalink: :path
               <p>{{ post.preview }}</p>
               <a href="{{ post.url }}" class="button button--line">Read More</a>
             </section>
-            <div class="image" style="background-image:url({{ site.url }}/assets/resources/{{ post.featured_image }});"></div>
+            <div class="image" style="background-image:url(/assets/resources/{{ post.featured_image }});"></div>
           </div> <!-- / __item -->
         {% endfor %}
         <div class="button-container">
-          <a href="{{ site.url }}/articles" class="button">Explore More</a>
+          <a href="/articles" class="button">Explore More</a>
         </div> <!-- / .button-container -->
       </div> <!-- / .container -->
     </div> <!-- / .blog -->

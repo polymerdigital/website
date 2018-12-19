@@ -13,8 +13,7 @@ let gulp = require('gulp'),
     gutil = require('gulp-util'),
     siteRoot = '_site',
     devTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-watch', 'serve'],
-    prodTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build'],
-    stageTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build-staging'];
+    prodTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build'];
 
 gulp.task('styles', function() {
     return gulp.src('_assets/styles/application.scss') // IMPORT ANY OTHER VENDOR LIBS FROM THAT SRC FILE
@@ -150,4 +149,3 @@ function handleError(err) {
 
 gulp.task('default', devTasks);
 gulp.task('build', prodTasks);
-gulp.task('build-staging', stageTasks);

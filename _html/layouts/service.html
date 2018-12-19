@@ -12,7 +12,7 @@
     <div class="with-side__content content">
       {% for service in site.data.services %}
         {% if service.title == page.title %}
-          <img width="40" src="{{ site.url }}/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
+          <img width="40" src="/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
         {% endif %}
       {% endfor %}
       {{ content }}
@@ -20,12 +20,12 @@
   </div>
 </div>
 
-<div class="banner" style="background-image:url({{ site.url }}/assets/resources/cta.jpg);">
+<div class="banner" style="background-image:url(/assets/resources/cta.jpg);">
   <div class="container">
     <section class="banner__content">
       <h2>Have a project we <br><em>can help</em> with?</h2>
       <p>Let us show you that web design really doesn't have to be hard</p>
-      <a href="{{ site.url }}/contact-us/" class="button button--light">Contact Us</a>
+      <a href="/contact-us/" class="button button--light">Contact Us</a>
     </section> <!-- / __content -->
   </div> <!-- / .container -->
 </div> <!-- / .banner -->

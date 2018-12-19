@@ -21,19 +21,19 @@ title: Articles
             <p>{{ post.preview }}</p>
             <a href="{{ post.url }}" class="button button--line">Read More</a>
           </section>
-          <div class="image" style="background-image:url({{ site.url }}/assets/resources/{{ post.featured_image }});"></div>
+          <div class="image" style="background-image:url(/assets/resources/{{ post.featured_image }});"></div>
         </div> <!-- / __item -->
       {% endfor %}
     </div>
   </div>
 </div>
 
-<div class="banner" style="background-image:url({{ site.url }}/assets/resources/cta.jpg);">
+<div class="banner" style="background-image:url(/assets/resources/cta.jpg);">
   <div class="container">
     <section class="banner__content">
       <h2>Web design can be <em>fun</em>! Give us a try to find out how</h2>
       <p>When you work with a down to earth team like us projects can be exciting and fun instead of stressful. Let's chat!</p>
-      <a href="{{ site.url }}/contact" class="button button--light">Contact Us</a>
+      <a href="/contact" class="button button--light">Contact Us</a>
     </section> <!-- / __content -->
   </div> <!-- / .container -->
 </div> <!-- / .banner -->

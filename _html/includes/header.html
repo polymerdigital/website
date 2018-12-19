@@ -3,30 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport"/>
-        <link href="{{ site.url }}/assets/resources/favicon.png" rel="icon">
+        <link href="/assets/resources/favicon.png" rel="icon">
         <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %} - Polymer Digital</title>
         <link href="https://fonts.googleapis.com/css?family=Exo+2:600,700,700i|Muli:400,600i" rel="stylesheet">
-        <link href="{{ site.url }}/assets/styles/application.css" rel="stylesheet">
+        <link href="/assets/styles/application.css" rel="stylesheet">
     </head>
     <body>
 
         <header class="main-header" id="top">
             <div class="container">
-                <a class="main-header__logo" href="{{ site.url }}">
-                    <img alt="Polymer Digital Logo" src="{{ site.url }}/assets/resources/polymer-logo.png">
+                <a class="main-header__logo" href="/">
+                    <img alt="Polymer Digital Logo" src="/assets/resources/polymer-logo.png">
                 </a>
                 <nav class="main-header__links">
                     <ul>
                         <li>
-                            <a href="{{ site.url }}/company">Company</a>
+                            <a href="/company">Company</a>
                         </li>
                         <li>
-                            <a class="with-dropdown" href="{{ site.url }}/what-we-do">What We Do</a>
+                            <a class="with-dropdown" href="/what-we-do">What We Do</a>
                             <ul class="dropdown">
                                 {% for service in site.data.services %}
                                     <li>
-                                        <a href="{{ site.url }}{{ service.url }}">
-                                            <img alt="{{ service.title }}" src="{{ site.url }}/assets/resources/{{ service.icon }}">
+                                        <a href="{{ service.url }}">
+                                            <img alt="{{ service.title }}" src="/assets/resources/{{ service.icon }}">
                                             <span>{{ service.title }}</span>
                                         </a>
                                     </li>
@@ -34,11 +34,11 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="{{ site.url }}/articles">Articles</a>
+                            <a href="/articles">Articles</a>
                         </li>
 
                     </ul>
-                    <a class="btn" href="{{ site.url }}/contact">Get In Touch</a>
+                    <a class="btn" href="/contact">Get In Touch</a>
                 </nav>
                 <a class="main-header__menu" href="#">
                     <span>Menu</span>

@@ -15,8 +15,8 @@ title: What We Do
       {% for service in site.data.services %}
         <div class="services__item">
           <div class="services__item__inner">
-            <img src="{{ site.url }}/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
-            <a href="{{ site.url }}{{ service.url }}">{{ service.title }}</a>
+            <img src="/assets/resources/{{ service.icon }}" alt="{{ service.title }}">
+            <a href="{{ service.url }}">{{ service.title }}</a>
           </div> <!-- / __inner -->
         </div> <!-- / __item -->
       {% endfor %}
@@ -24,7 +24,7 @@ title: What We Do
   </div> <!-- / .container -->
 </div> <!-- / .section -->
 
-<div class="banner banner--light" style="background-image:url({{ site.url }}/assets/resources/banner.svg);">
+<div class="banner banner--light" style="background-image:url(/assets/resources/banner.svg);">
   <div class="container">
     <section class="banner__content">
       <h2>Something Catch Your Eye?</h2>
