@@ -12,11 +12,27 @@ let gulp = require('gulp'),
     child = require('child_process'),
     gutil = require('gulp-util'),
     siteRoot = '_site',
-    devTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-watch', 'serve'],
-    prodTasks = ['styles', 'vendor-js', 'js', 'resources', 'resources-files', 'jekyll-build'];
+    devTasks = [
+        'styles',
+        'vendor-js',
+        'js',
+        'resources',
+        'resources-files',
+        'jekyll-watch',
+        'serve'
+    ],
+    prodTasks = [
+        'styles',
+        'vendor-js',
+        'js',
+        'resources',
+        'resources-files',
+        'jekyll-build'
+    ];
 
-gulp.task('styles', function() {
-    return gulp.src('_assets/styles/application.scss') // IMPORT ANY OTHER VENDOR LIBS FROM THAT SRC FILE
+gulp.task('styles', function () {
+    return gulp
+        .src('_assets/styles/application.scss') // IMPORT ANY OTHER VENDOR LIBS FROM THAT SRC FILE
         .pipe(flatten())
         .pipe(newer('src/**/*'))
         .pipe(sourcemaps.init())
@@ -28,20 +44,19 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('assets/styles'));
 });
 
-gulp.task('vendor-js', function() {
-    return gulp.src([ // INCLUDE ANY OTHER VENDOR LIBS HERE
-        '_assets/js/vendor/**/*.js'
-    ])
+gulp.task('vendor-js', function () {
+    return gulp
+        .src([// INCLUDE ANY OTHER VENDOR LIBS HERE
+            '_assets/js/vendor/**/*.js'])
         .pipe(concat('application-vendor.js'))
         .pipe(uglify())
         .on('error', handleError)
         .pipe(gulp.dest('assets/js'));
 });
 
-gulp.task('js', function() {
-    return gulp.src([
-        '_assets/js/scripts/**/*.js',
-    ])
+gulp.task('js', function () {
+    return gulp
+        .src(['_assets/js/scripts/**/*.js'])
         .pipe(sourcemaps.init())
         .on('error', handleError)
         .pipe(concat('application.js'))
@@ -49,22 +64,19 @@ gulp.task('js', function() {
         .pipe(gulp.dest('assets/js'));
 });
 
-gulp.task('resources', function() {
-    return gulp.src('_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}')
+gulp.task('resources', function () {
+    return gulp
+        .src('_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}')
         .pipe(flatten())
         .pipe(newer('assets/resources'))
-        .pipe(imagemin({
-            optimizationLevel: 5,
-            progressive: true,
-            interlaced: true,
-            svgoPlugins: []
-        }))
+        .pipe(imagemin({optimizationLevel: 5, progressive: true, interlaced: true, svgoPlugins: []}))
         .on('error', handleError)
         .pipe(gulp.dest('assets/resources'));
 });
 
-gulp.task('resources-files', function() {
-    return gulp.src(['_assets/resources/**/*', '!_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}'])
+gulp.task('resources-files', function () {
+    return gulp
+        .src(['_assets/resources/**/*', '!_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}'])
         .pipe(flatten())
         .pipe(newer('assets/resources'))
         .on('error', handleError)
@@ -73,71 +85,97 @@ gulp.task('resources-files', function() {
 
 gulp.task('jekyll-watch', () => {
 
-  const jekyll = child.exec('jekyll build --watch --config _config.yml,_config.dev.yml');
+    const jekyll = child.exec('jekyll build --watch --config _config.yml,_config.dev.yml');
 
-  const jekyllLogger = (buffer) => {
-    buffer.toString()
-      .split(/\n/)
-      .forEach((message) => gutil.log('Jekyll: ' + message));
-  };
+    const jekyllLogger = (buffer) => {
+        buffer
+            .toString()
+            .split(/\n/)
+            .forEach((message) => gutil.log('Jekyll: ' +
+                    message));
+    };
 
-  jekyll.stdout.on('data', jekyllLogger);
-  jekyll.stderr.on('data', jekyllLogger);
+    jekyll
+        .stdout
+        .on('data', jekyllLogger);
+    jekyll
+        .stderr
+        .on('data', jekyllLogger);
 
 });
 
 gulp.task('jekyll-build', () => {
 
-  const jekyll = child.exec('jekyll build --config _config.yml');
+    const jekyll = child.exec('jekyll build --config _config.yml');
 
-  const jekyllLogger = (buffer) => {
-    buffer.toString()
-      .split(/\n/)
-      .forEach((message) => gutil.log('Jekyll: ' + message));
-  };
+    const jekyllLogger = (buffer) => {
+        buffer
+            .toString()
+            .split(/\n/)
+            .forEach((message) => gutil.log('Jekyll: ' +
+                    message));
+    };
 
-  jekyll.stdout.on('data', jekyllLogger);
-  jekyll.stderr.on('data', jekyllLogger);
+    jekyll
+        .stdout
+        .on('data', jekyllLogger);
+    jekyll
+        .stderr
+        .on('data', jekyllLogger);
 
 });
 
 gulp.task('jekyll-build-staging', () => {
 
-  const jekyll = child.exec('jekyll build --config _config.yml,_config.staging.yml');
+    const jekyll = child.exec('jekyll build --config _config.yml,_config.staging.yml');
 
-  const jekyllLogger = (buffer) => {
-    buffer.toString()
-      .split(/\n/)
-      .forEach((message) => gutil.log('Jekyll: ' + message));
-  };
+    const jekyllLogger = (buffer) => {
+        buffer
+            .toString()
+            .split(/\n/)
+            .forEach((message) => gutil.log('Jekyll: ' +
+                    message));
+    };
 
-  jekyll.stdout.on('data', jekyllLogger);
-  jekyll.stderr.on('data', jekyllLogger);
+    jekyll
+        .stdout
+        .on('data', jekyllLogger);
+    jekyll
+        .stderr
+        .on('data', jekyllLogger);
 
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', function () {
 
     browserSync.init({
-     injectChanges: true,
-     watch: true,
-     ignore: ['_site', 'gulpfile.js'],
-     port: 4000,
-     server: {
-       baseDir: siteRoot
-     }
-   });
+        injectChanges: true,
+        watch: true,
+        ignore: [
+            '_site', 'gulpfile.js'
+        ],
+        port: 4000,
+        server: {
+            baseDir: siteRoot
+        }
+    });
 
-    gulp.watch(['src/markup/**/*.{nunjucks,html}', '!src/vendor'], ['markup']);
+    gulp.watch([
+        'src/markup/**/*.{nunjucks,html}', '!src/vendor'
+    ], ['markup']);
     gulp.watch(['_assets/styles/**/*.scss'], ['styles']);
     gulp.watch(['_assets/js/scripts/**/*.js'], ['js']);
     gulp.watch(['_assets/js/vendor/**/*.js'], ['vendor-js']);
     gulp.watch(['_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}'], ['resources']);
-    gulp.watch(['_assets/resources/**/*', '!_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}'], ['resources-files']);
+    gulp.watch([
+        '_assets/resources/**/*', '!_assets/resources/**/*.{jpg,jpeg,png,gif,ico,svg}'
+    ], ['resources-files']);
 
-    gulp.watch(['**/*.md', '**/*.html', 'assets/js/*.js', '.{jpg,jpeg,png,gif,ico,svg}', 'assets/styles/*.css']).on('change', function() {
-        browserSync.reload();
-    });
+    gulp
+        .watch(['**/*.md', '**/*.html', 'assets/js/*.js', '.{jpg,jpeg,png,gif,ico,svg}', 'assets/styles/*.css'])
+        .on('change', function () {
+            browserSync.reload();
+        });
 
 });
 
