@@ -41,7 +41,7 @@
     flex-wrap: wrap;
 
     //Mobile Click Dropdown
-    @include breakpoint(760px) {
+    @include breakpoint(850px) {
       display: none;
       &.active {
         display: flex;
@@ -188,7 +188,7 @@
     position: relative;
     z-index: 100;
     cursor: pointer;
-    @include breakpoint(760px) {
+    @include breakpoint(850px) {
       display: flex;
       align-items: center;
       justify-content: flex-end;
