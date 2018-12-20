@@ -14,10 +14,6 @@
     position: relative;
     background: $primary;
     color: $white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 26px;
     border-radius: 6px;
     &:before {
       @include content100;
@@ -43,16 +39,14 @@
       }
     }
     .image {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-position: top right;
+      display: block;
+      height: 280px;
+      background-position: top left;
       background-size: cover;
       opacity: .6;
       border-radius: 6px;
       transition: $dt;
+      width: 100%;
       &:before {
         @include content100;
         border-radius: 6px;
@@ -61,6 +55,7 @@
     }
   }
   &__inner {
+    padding: 20px;
     position: relative;
     z-index: 10;
     width: 100%;
@@ -70,11 +65,12 @@
         font-size: 1.25em;
       }
     }
+    h3 {
+      font-size: 1.1em;
+    }
     p {
       @include p-small(10px);
-      @include breakpoint(650px) {
-        margin-bottom: 5px;
-      }
+      margin-bottom: 0;
     }
     .link {
       color: $white;
@@ -130,13 +126,9 @@
   }
   &__image {
     width: 100%;
-    padding: 40px 20px 0 20px;
-    height: 0;
-    padding-top: 54%;
+    height: 280px;
     background: url(../resources/team-bg.svg) no-repeat center center;
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
     border-radius: 6px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;

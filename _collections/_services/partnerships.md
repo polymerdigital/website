@@ -4,7 +4,7 @@ title: Partnerships
 
 # Partnerships
 
-Here at Polymer Digital we want to be more than just the people who built your website. We want to be your partners when it comes to anything that has to do with the web. Let's work together to ensure your business is growing.
+<span class="leadin">Here at Polymer Digital we want to be more than just the people who built your website. We want to be your partners when it comes to anything that has to do with the web. Let's work together to ensure your business is growing.</span>
 
 ## Your Partners on the Web
 

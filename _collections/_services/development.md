@@ -4,7 +4,7 @@ title: Development
 
 # Development
 
-Where design leaves off development picks up to ensure your amazing looking website functions flawlessly. Our developers can engineer endlessly complex features but our philosophy is grounded in reliability, security and performance.
+<span class="leadin">Where design leaves off development picks up to ensure your amazing looking website functions flawlessly. Our developers can engineer endlessly complex features but our philosophy is grounded in reliability, security and performance.</span>
 
 ## Frontend
 

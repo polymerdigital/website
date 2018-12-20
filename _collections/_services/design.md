@@ -4,7 +4,7 @@ title: Design
 
 # Design
 
-To us design is more than just a good looking website. Great design is telling a story that accentuates your product or service and helps visitors on your website make an informed decision.
+<span class="leadin">To us design is more than just a good looking website. Great design is telling a story that accentuates your product or service and helps visitors on your website make an informed decision.</span>
 
 ## For You
 

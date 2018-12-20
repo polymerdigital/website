@@ -4,7 +4,7 @@ title: Support
 
 # Support
 
-Beyond design and development the support we provide you with for your website is the glue in our relationship. We love helping you launch and take care of your website.
+<span class="leadin">Beyond design and development the support we provide you with for your website is the glue in our relationship. We love helping you launch and take care of your website.</span>
 
 ## Hosting Setup
 

@@ -4,7 +4,7 @@ title: Discovery
 
 # Discovery
 
-Our projects all start out with a discovery session. Whether it's our first project or tenth project together we want to catch up, make sure we're all on the same page, and ensure we're ready to produce something awesome together.
+<span class="leadin">Our projects all start out with a discovery session. Whether it's our first project or tenth project together we want to catch up, make sure we're all on the same page, and ensure we're ready to produce something awesome together.</span>
 
 ## People
 

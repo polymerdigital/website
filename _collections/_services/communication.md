@@ -4,7 +4,7 @@ title: Communication
 
 # Communication
 
-For any successful relationship to work communication has to be a top priority. When we work together we'll go out of our way to ensure everyone is on the same page at all times.
+<span class="leadin">For any successful relationship to work communication has to be a top priority. When we work together we'll go out of our way to ensure everyone is on the same page at all times.</span>
 
 ## Customer Service
 

@@ -3,6 +3,7 @@ url:                  "https://polymerdigital.com"
 collections_dir:      _collections
 layouts_dir:          _html/layouts
 includes_dir:         _html/includes
+plugins_dir:          _plugins
 
 # Collections
 collections:

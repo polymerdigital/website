@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   margin-top: 30px;
   &__item {
+    border: 1px solid rgba($primary, .2);
     width: calc((100% / 3) - 24px);
     margin: 0 12px 24px;
     position: relative;

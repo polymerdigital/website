@@ -37,8 +37,7 @@
     }
   }
   &__slider {
-    background: $primary;
-    color: $white;
+    background: #f8f8f8;
     width: calc(100% - 500px);
     padding: 180px;
     position: relative;
@@ -55,6 +54,7 @@
     @include breakpoint(550px) {
       padding: 80px 40px;
     }
+
     .slick-prev {
       display: none !important;
     }
@@ -101,6 +101,7 @@
       }
     }
     p {
+      color: #222;
       font-style: italic;
       font-weight: 600;
     }

@@ -23,10 +23,12 @@ i, em{
   display: none;
 }
 a {
+  color: #FF5722;
   text-decoration: none;
+  transition: color .2s;
 
   &:hover {
-
+    color: #1A237E;
   }
 }
 

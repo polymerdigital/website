@@ -2,6 +2,22 @@
 .section {
   width: 100%;
   padding: 120px 0;
+
+  &.dark {
+    background: $primary;
+
+    .heading {
+      h1, 
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #fff;
+      }
+    }
+  } 
+
   @include breakpoint(900px) {
     padding: 60px 0;
   }
