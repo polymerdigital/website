@@ -1,0 +1,71 @@
+{% include header.html %}
+
+<div class="simple-intro bottom">
+    <div class="container full">
+        <div class="simple-intro__columns">
+            <div class="details">
+                <h1>{{ page.title }}</h1>
+                <div class="simple-intro__services">
+                    <ul>
+                        <li>Service
+                            <strong>{{ page.service }}</strong>
+                        </li>
+                        <li>Date
+                            <strong>{{ page.year }}</strong>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / __services -->
+            </div>
+            <!-- / .details -->
+            <div class="description">
+                <h2>Project Description</h2>
+                <p>{{ page.description }}</p>
+            </div>
+            <!-- / .description -->
+        </div>
+        <!-- / __columns -->
+    </div>
+    <!-- / .container -->
+</div>
+<!-- / .simple-intro -->
+
+<div class="case-study">
+    <div class="case-study__section" id="homepage">
+        <div class="container">
+            <div class="heading">
+                <h2>Key Pages</h2>
+                <p>Hover or tap a page to see it scroll</p>
+            </div>
+            <!-- / __heading -->
+
+            <div class="screenshots">
+              {% for key_page in page.key_pages %}
+                <div class="screenshot">
+                  <div class="chrome">
+                    <span class="chrome-button"></span>
+                    <span class="chrome-button"></span>
+                    <span class="chrome-button"></span>
+                    {{ key_page.title }}
+                  </div>
+                  <div class="thumbnail" style="background-image: url(https://res.cloudinary.com/polymer-digital/image/upload/c_scale,w_1400/v1/pd-website/work/{{ key_page.image }});"></div>
+                </div>
+              {% endfor %}
+            </div><!-- / screenshots -->
+        </div>
+        <!-- / .container -->
+    </div>
+    <!-- / __section -->
+</div>
+
+<div class="banner" style="background-image:url(/assets/resources/cta.jpg);">
+  <div class="container">
+    <section class="banner__content">
+      <h2>Web design doesn't have to be <em>crazy</em>, does it?</h2>
+      <p>Let's set up a time to talk and we'll show you how we take a no-nonsense approach to helping you with your website</p>
+      <a href="/contact-us/" class="button button--light">Contact Us</a>
+    </section> <!-- / __content -->
+  </div> <!-- / .container -->
+</div> <!-- / .banner -->
+
+{% include footer.html %}
