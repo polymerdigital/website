@@ -72,3 +72,25 @@
     }
   }
 }
+
+.linkedin-blurb {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+  margin: 40px 0;
+  padding: 15px 15px 0;
+
+  .linkedin {
+    border-top: 1px solid #E6E6E6;
+    color: #0078B4;
+    display: block;
+    margin-top: 15px;
+    padding: 15px 0;
+    text-align: center;
+
+    svg {
+      height: auto;
+      fill: #0078B4;
+      margin-right: 5px;
+      width: 16px;
+    }
+  }
+}

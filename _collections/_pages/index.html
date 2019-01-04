@@ -46,7 +46,7 @@ permalink: :path
 <div class="section">
   <div class="container">
     <div class="heading">
-      <h2>What we do</h2>
+      <h2>What We Do</h2>
     </div> <!-- / .heading -->
     <div class="services">
       {% for service in site.data.services %}
@@ -74,96 +74,54 @@ permalink: :path
 <div class="section" id="projects">
     <div class="container">
       <div class="heading">
-        <h2>Some of our work</h2>
+        <h2>Recent Work</h2>
       </div> <!-- / .heading -->
     </div> <!-- / .container -->
     
     <div class="work-grid2">
       <div class="container">
 
-        <a href="/work/securesheet/" class="work-preview">
-          <div class="chrome">
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            SecureSheet
-          </div>
-          <div class="thumbnail" style="background-image: url(/assets/resources/work-securesheet-thumbnail.jpg);"></div>
-        </a>
-
-        <a href="/work/house-of-ideas/" class="work-preview">
-          <div class="chrome">
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            House of Ideas
-          </div>
-          <div class="thumbnail" style="background-image: url(/assets/resources/work-hoi-thumbnail.jpg);"></div>
-        </a>
-
-        <a href="/work/american-daylily-society/" class="work-preview">
-          <div class="chrome">
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            American Daylily Society
-          </div>
-          <div class="thumbnail" style="background-image: url(/assets/resources/work-ads-thumbnail.jpg);"></div>
-        </a>
-
-        <a href="/work/the-overhead-door-co/" class="work-preview">
-          <div class="chrome">
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            The Overhead Door Co
-          </div>
-          <div class="thumbnail" style="background-image: url(/assets/resources/work-odc-thumbnail.jpg);"></div>
-        </a>
-
-        <a href="/work/integrated-rehab-consultants/" class="work-preview">
-          <div class="chrome">
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            Integrated Rehab Consultants
-          </div>
-          <div class="thumbnail" style="background-image: url(/assets/resources/work-irc-thumbnail.jpg);"></div>
-        </a>
-
-        <a href="/work/rhea-space-activity/" class="work-preview">
-          <div class="chrome">
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            <span class="chrome-button"></span>
-            Rhea Space Activity
-          </div>
-          <div class="thumbnail" style="background-image: url(/assets/resources/work-rsa-thumbnail.jpg);"></div>
-        </a>
+        {% assign posts = site.work | sort: 'order' | limit: 2 %}
+        {% for post in posts %}
+          {% if post.homepage %}
+            <a href="{{ post.url }}" class="work-preview">
+              <div class="chrome">
+                <span class="chrome-button"></span>
+                <span class="chrome-button"></span>
+                <span class="chrome-button"></span>
+                {{ post.title }}
+              </div>
+              <div class="thumbnail" style="background-image: url({{ post.thumbnail }});"></div>
+            </a>
+          {% endif %}
+        {% endfor %}
 
       </div><!-- / . container -->
     </div><!-- / .work-grid2 -->
+    <div class="container button-container">
+      <a href="/work/" class="button button--white">View More Work</a>
+    </div>
   </div> <!-- / .section -->
 
     <div class="section dark">
     <div class="container">
       <div class="heading">
-        <h2>Featured Articles</h2>
+        <h2>Recent Articles & Thoughts</h2>
       </div> <!-- / heading -->
       <div class="blog">
         {% assign posts = site.articles | sort: 'date' | reverse %}
-        {% for post in posts %}
+        {% for post in posts limit: 3 %}
           <div class="blog__item">
             <section>
               <h3>{{ post.title }}</h3>
               <p>{{ post.preview }}</p>
               <a href="{{ post.url }}" class="button button--line">Read More</a>
             </section>
-            <div class="image" style="background-image:url(/assets/resources/{{ post.featured_image }});"></div>
+            <div class="image" style="background-image:url(/assets/resources/{% if post.featured_image %}{{ post.featured_image }}{% else %}featured-image-default.jpg{% endif %});"></div>
           </div> <!-- / __item -->
         {% endfor %}
         <div class="button-container">
-          <a href="/articles" class="button">Explore More</a>
+          <a href="/articles" class="button button--light">Read More</a>
         </div> <!-- / .button-container -->
       </div> <!-- / .container -->
     </div> <!-- / .blog -->

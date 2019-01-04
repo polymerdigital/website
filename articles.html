@@ -1,0 +1,60 @@
+--- 
+title: Articles 
+permalink: /articles/ 
+pagination: 
+  enabled: true 
+---
+
+<div class="blog-intro">
+    <div class="container">
+        <div class="heading">
+            <h1 class="heading__heading">Articles & Thoughts</h1>
+        </div>
+        <!-- / .heading -->
+    </div>
+    <!-- / .container -->
+</div>
+<!-- / .blog-intro -->
+
+<div class="section blog-landing">
+    <div class="container">
+        <div class="blog">
+            {% assign posts = site.articles | sort : 'date' | reverse %}
+            {% for post in paginator.posts %}
+                <div class="blog__item">
+                    <section>
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.preview }}</p>
+                        <a class="button button--line" href="{{ post.url }}">Read More</a>
+                    </section>
+                    <div class="image" style="background-image:url(/assets/resources/{% if post.featured_image %}{{ post.featured_image }}{% else %}featured-image-default.jpg{% endif %});"></div>
+                </div>
+                <!-- / __item -->
+            {% endfor %}
+        </div>
+        {% if paginator.total_pages > 1 %}
+          <div class="pagination">
+            {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="button button--solid">Newer Posts</a>
+            {% endif %}
+            {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button button--solid">Older Posts</a>
+            {% endif %}
+          </div>
+        {% endif %}
+    </div>
+</div>
+
+<div class="banner" style="background-image:url(/assets/resources/cta.jpg);">
+    <div class="container">
+        <section class="banner__content">
+            <h2>Web design can be
+                <em>fun</em>! Give us a try to find out how</h2>
+            <p>When you work with a down to earth team like us projects can be exciting and fun instead of stressful. Let's chat!</p>
+            <a class="button button--light" href="/contact">Contact Us</a>
+        </section>
+        <!-- / __content -->
+    </div>
+    <!-- / .container -->
+</div>
+<!-- / .banner -->

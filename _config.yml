@@ -67,4 +67,19 @@ markdown: kramdown
 #   - vendor/gems/
 #   - vendor/ruby/
 
+plugins:
+  - jekyll-paginate-v2 
+
 exclude: [pull_request_template.md, README.md, Gemfile, Gemfile.lock, package.json, node_modules, gulpfile.js, yarn.lock, .jshintrc, package-lock.json, netlify.toml, vendor]
+
+# Pagination Settings
+pagination:
+  enabled: true
+  debug: true
+  collection: 'articles'
+  per_page: 6
+  permalink: '/:num/'
+  title: ':title | :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true

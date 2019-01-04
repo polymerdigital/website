@@ -1,41 +1,33 @@
 ---
 title:  Real Culture
-date:   2018-11-16 17:58:40 -0600
+date:   2019-01-03
 featured_image: real-culture.jpg
-banner_image: culture-demo.png
+banner_image: real-culture-banner.jpg
 preview: Read how Polymer Digital keeps customers and team members happy through organic culture.
-categories: [Culture, Internal]
-author: Brian McCoy
+categories: [Agency Leadership]
+author: Brian
 ---
 
-If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each. You may be saying to yourself, “Wow, what a deal!”. But be careful, check out the quality before you make your purchase. Make sure the tape will fit your needs.
+Here at Polymer Digital we’re a distributed team of contractors working together for a common goal. As a customer service company it’s incredibly important that we have a high moral and strong culture at all times. If there’s ever someone malcontent it could damage our good will and create a ripple effect across other team members and our customers. This article will cover some high level beliefs we have that help keep spirits high even during challenging times.
 
-* If you are looking at blank cassettes on the web, you may be very confused at the difference in price.
-* You may see some for as low as $.17 each.
-* You may be saying to yourself, “Wow, what a deal!”. 
+## Don’t be fake 
 
-![alt text](http://placehold.it/700x250)
+So many studios and agencies out there put on a strong front. “We’re an awesome company look at us all doing work and smiling! #culture”. A lot of it is often just lip service. Customers and team members alike can see right through this facade. A good rule of thumb is if you’re going out of your way to promote or work on your culture it probably isn’t a good one.
 
-## Heading 2
+It’s important to realize you can’t write your culture down. You also can’t share it through blogs or social media. Your culture is just who you are and it starts at the top and works it’s way down. You can write down “our culture means we will love one another” but if the CEO is a smug person their company will take on that personality. Likewise if they’re energetic and open the team will follow their lead. You can document all of the best values and processes but ultimately you have to walk the walk. 
 
-1. List Item
-2. List Item
-3. List Item
+## Be real
 
-### Heading 3
+When you’re not trying to fool yourself and everyone else about your culture you can be real. Tell people how it really is. If your developer is struggling you don’t need to beat around the bush. Be open, honest and professional. They’ll appreciate you more for it. Likewise if you’re hitting a bump in the road with a project don’t try to sweep it under the rug with a customer. If you’re real with them they’ll be more understanding. 
 
-Lorem ipsum dolor sit amet, consectetur <em>adipisicing</em> elit. Aut id <strong>asperiores</strong> fugit pariatur <a href="#">libero aspernatur</a> neque minus quidem sit nostrum.
+When people know you’re coming from a position of being real and honest they’ll trust you more. Good things come from relationships that have strong trust involved. 
 
-#### Heading 4
+## Listen well
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sapiente vitae laborum, quidem nemo soluta doloribus ipsum animi repudiandae pariatur, maiores dolorem, minima ipsam sunt ut quam fuga at, dolor.
+Ever talk to someone and you feel like the words are going in one ear and out the other? This is the worst and it happens a lot at all companies. Here at Polymer Digital we work with our team to be compassionate and caring. Sometimes when you’re in the heat of a project emotions can run high. We always are happy to hit the pause button, take a step back and hear everyone out. It doesn’t have to be the customer being the hot point either. Sometimes team members get stressed out or frustrated. It’s important to sit down, listen to their problems, and offer thoughtful resolution.  When you come up with resolutions to problems you have to be sure to follow through as well. It goes back to being real. If you say you’re going to give Joe more support with his design work then you’d better do it. 
 
-##### Heading 5
+Since real culture isn’t written or created it’s important to use listening to your advantage to keep a pulse on your company. If someone is upset you know you have an issue. It doesn’t mean your culture is now bad and you have to make a new one. It means you need to find the issue and fix it. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sapiente vitae laborum, quidem nemo soluta doloribus ipsum animi repudiandae pariatur, maiores dolorem, minima ipsam sunt ut quam fuga at, dolor.
+## Don’t over think it
 
-###### Heading 6
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sapiente vitae laborum, quidem nemo soluta doloribus ipsum animi repudiandae pariatur, maiores dolorem, minima ipsam sunt ut quam fuga at, dolor.
-
-> If you are looking at blank cassettes on the web, you may be very confused at the difference in price.
+At the end of the day our goal is to do great work, with great people for great people. When you focus on that a lot of the other particulars can fade away. So many companies get wrapped up in their culture - some even employ people just for culture. Talk about needless overhead. When you can trust your team and they can trust you amazing things will happen and you’ll have great culture. No amount of happy hours, team lunches, social media posts, fun activities, etc. can replace just being good at what you do and enjoying working together. 

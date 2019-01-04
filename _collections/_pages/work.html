@@ -1,0 +1,43 @@
+---
+title: Work
+---
+
+<div class="blog-intro">
+    <div class="container">
+      <div class="heading">
+        <h1 class="heading__heading">Our Work</h1>
+      </div> <!-- / .heading -->
+    </div> <!-- / .container -->
+  </div> <!-- / .blog-intro -->
+
+  <div class="section" id="projects">
+    
+    <div class="work-grid2">
+      <div class="container">
+
+        {% assign posts = site.work | sort: 'date' | reverse %}
+        {% for post in posts %}
+          <a href="{{ post.url }}" class="work-preview">
+            <div class="chrome">
+              <span class="chrome-button"></span>
+              <span class="chrome-button"></span>
+              <span class="chrome-button"></span>
+              {{ post.title }}
+            </div>
+            <div class="thumbnail" style="background-image: url({{ post.thumbnail }});"></div>
+          </a>
+        {% endfor %}
+
+      </div><!-- / . container -->
+    </div><!-- / .work-grid2 -->
+  </div> <!-- / .section -->
+
+<div class="banner" style="background-image:url(/assets/resources/cta.jpg);">
+  <div class="container">
+    <section class="banner__content">
+      <h2>Something Catch Your Eye?</h2>
+      <p>Have an interest in what we do? Direct a message this way!</p>
+      <a href="#" class="button button--light">Contact Us</a>
+    </section> <!-- / __content -->
+  </div> <!-- / .container -->
+</div> <!-- / .banner -->
