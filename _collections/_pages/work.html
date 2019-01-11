@@ -15,7 +15,7 @@ title: Work
     <div class="work-grid2">
       <div class="container">
 
-        {% assign posts = site.work | sort: 'date' | reverse %}
+        {% assign posts = site.work | sort: 'order' %}
         {% for post in posts %}
           <a href="{{ post.url }}" class="work-preview">
             <div class="chrome">

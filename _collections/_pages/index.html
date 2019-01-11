@@ -113,6 +113,7 @@ permalink: :path
         {% for post in posts limit: 3 %}
           <div class="blog__item">
             <section>
+              <h6>{% if post.linkedin_url %}Quick Read{% else %}Article{% endif %}</h6>
               <h3>{{ post.title }}</h3>
               <p>{{ post.preview }}</p>
               <a href="{{ post.url }}" class="button button--line">Read More</a>

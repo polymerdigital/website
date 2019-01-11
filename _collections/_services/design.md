@@ -24,4 +24,4 @@ Here at Polymer Digital phones and tablets are first class citizens when it come
 
 ## Branding & Graphic Design
 
-Here at Polymer Digital phones and tablets are first class citizens when it comes to design. Gone are the days where desktop is the priority - more and more people are browsing the web exclusively from their mobile devices. As such we strive to provide equal experiences whether it’s from a computer, a phone or a tablet. 
+Our prowess with design doesn’t end with the web. If you’re in need of illustrations, icons, logos or even brand creation our designers have you covered. 

@@ -23,6 +23,7 @@ pagination:
             {% for post in paginator.posts %}
                 <div class="blog__item">
                     <section>
+                        <h6>{% if post.linkedin_url %}Quick Read{% else %}Article{% endif %}</h6>
                         <h3>{{ post.title }}</h3>
                         <p>{{ post.preview }}</p>
                         <a class="button button--line" href="{{ post.url }}">Read More</a>

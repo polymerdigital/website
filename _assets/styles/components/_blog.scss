@@ -37,7 +37,7 @@
     }
     &:hover {
       background: $primary;
-      h3, p {
+      h6, h3, p {
         color: $white;
       }
       &:before {
@@ -79,9 +79,14 @@
         font-size: 80%;
       }
     }
-    h3, &__heading {
+    h3,h6, &__heading {
       @include h3;
       transition: $dt;
+    }
+    h6 {
+      color: #888;
+      font-size: 14px;
+      text-transform: uppercase;
     }
     p {
       @include p-small;
