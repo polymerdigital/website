@@ -28,12 +28,12 @@ sections:
   create: all
   match: "**/*"
   path: _collections/_pages
-  hidden: true
 - type: directory
   path: _utilities
   label: Utilities
   create: all
   match: "**/*"
+  hidden: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
