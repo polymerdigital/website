@@ -69,6 +69,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-paginate-v2 
+  - jekyll-sitemap
 
 exclude: [pull_request_template.md, README.md, Gemfile, Gemfile.lock, package.json, node_modules, gulpfile.js, yarn.lock, .jshintrc, package-lock.json, netlify.toml, vendor]
 
