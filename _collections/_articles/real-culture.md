@@ -14,9 +14,9 @@ Here at Polymer Digital we’re a distributed team of contractors working togeth
 
 ## Don’t be fake
 
-So many studios and agencies out there put on a strong front. “We’re an awesome company look at us all doing work and smiling! #culture”. A lot of it is often just lip service. Customers and team members alike can see right through this facade. A good rule of thumb is if you’re going out of your way to promote or work on your culture it probably isn’t a good one.
+So many studios and agencies put on a strong front. “We’re an awesome company look at us all doing work and smiling! #culture”. A lot of it is often just lip service. Customers and team members alike can see right through this facade. A good rule of thumb is if you’re going out of your way to promote or work on your culture it probably isn’t a good one.
 
-It’s important to realize you can’t write your culture down. You also can’t share it through blogs or social media. Your culture is just who you are and it starts at the top and works it’s way down. You can write down “our culture means we will love one another” but if the CEO is a smug person their company will take on that personality. Likewise if they’re energetic and open the team will follow their lead. You can document all of the best values and processes but ultimately you have to walk the walk.
+It’s important to realize you can’t write your culture down. You also can’t share it through blogs or social media. Your culture is just who you are and it starts at the top and works its way down. You can write down “our culture means we will love one another” but if the CEO is a smug person their company will take on that personality. Likewise if they’re energetic and open the team will follow their lead. You can document all of the best values and processes but ultimately you have to walk the walk.
 
 ## Be real
 
