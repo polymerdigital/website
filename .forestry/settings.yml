@@ -5,29 +5,25 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: _work
+  path: _collections/_work
   label: Work
   create: all
   match: "**/*"
-  path: _collections/_work
 - type: directory
-  path: _services
+  path: _collections/_services
   label: Services
   create: all
   match: "**/*"
-  path: _collections/_services
 - type: directory
-  path: _articles
+  path: _collections/_articles
   label: Articles
   create: all
   match: "**/*"
-  path: _collections/_articles
 - type: directory
-  path: _pages
+  path: _collections/_pages
   label: Pages
   create: all
   match: "**/*"
-  path: _collections/_pages
 - type: directory
   path: _utilities
   label: Utilities
@@ -39,3 +35,12 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+build:
+  preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
+  publish_command: bundle exec jekyll build -d _site
+  preview_env:
+  - JEKYLL_ENV=staging
+  publish_env:
+  - JEKYLL_ENV=production
+  preview_output_directory: _site
+  output_directory: _site
